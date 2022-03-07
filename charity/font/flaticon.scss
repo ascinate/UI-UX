@@ -1,0 +1,85 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?240364e65d61d76842d575401f4aeddb") format("truetype"),
+url("./flaticon.woff?240364e65d61d76842d575401f4aeddb") format("woff"),
+url("./flaticon.woff2?240364e65d61d76842d575401f4aeddb") format("woff2"),
+url("./flaticon.eot?240364e65d61d76842d575401f4aeddb#iefix") format("embedded-opentype"),
+url("./flaticon.svg?240364e65d61d76842d575401f4aeddb#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "digital-marketing": "\f101",
+    "verified": "\f102",
+    "donation": "\f103",
+    "love": "\f104",
+    "live-chat": "\f105",
+    "donation-1": "\f106",
+    "technical-support": "\f107",
+    "volunteer": "\f108",
+    "cardiogram": "\f109",
+    "fast-food": "\f10a",
+    "mortarboard": "\f10b",
+    "trophy": "\f10c",
+    "chart": "\f10d",
+    "healthcare": "\f10e",
+    "mortarboard-1": "\f10f",
+);
+
+.flaticon-digital-marketing:before {
+    content: map-get($flaticon-map, "digital-marketing");
+}
+.flaticon-verified:before {
+    content: map-get($flaticon-map, "verified");
+}
+.flaticon-donation:before {
+    content: map-get($flaticon-map, "donation");
+}
+.flaticon-love:before {
+    content: map-get($flaticon-map, "love");
+}
+.flaticon-live-chat:before {
+    content: map-get($flaticon-map, "live-chat");
+}
+.flaticon-donation-1:before {
+    content: map-get($flaticon-map, "donation-1");
+}
+.flaticon-technical-support:before {
+    content: map-get($flaticon-map, "technical-support");
+}
+.flaticon-volunteer:before {
+    content: map-get($flaticon-map, "volunteer");
+}
+.flaticon-cardiogram:before {
+    content: map-get($flaticon-map, "cardiogram");
+}
+.flaticon-fast-food:before {
+    content: map-get($flaticon-map, "fast-food");
+}
+.flaticon-mortarboard:before {
+    content: map-get($flaticon-map, "mortarboard");
+}
+.flaticon-trophy:before {
+    content: map-get($flaticon-map, "trophy");
+}
+.flaticon-chart:before {
+    content: map-get($flaticon-map, "chart");
+}
+.flaticon-healthcare:before {
+    content: map-get($flaticon-map, "healthcare");
+}
+.flaticon-mortarboard-1:before {
+    content: map-get($flaticon-map, "mortarboard-1");
+}
