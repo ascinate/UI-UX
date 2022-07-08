@@ -1,0 +1,3073 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blendicons - Products</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Corben&family=Elsie&family=Encode+Sans+Condensed:wght@400;500;600;700;800&family=Gloria+Hallelujah&family=Inter:wght@100;200;300;400;500;700;800;900&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+   
+
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   
+    
+  </head>
+
+<body class="products-page">
+  
+  <header class="float-start w-100">
+    <div class="top-bar d-flex justify-content-between align-items-center">
+     
+      <nav class="navbar main-nav navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+         <button class="btn d-block d-lg-none tg-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+         </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt="logo"/>
+          </a>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+
+               <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="analytics.html">Analytics </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="user.html">Users</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="products.html">Products </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="site.html">Site </a>
+                </li>
+           
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+     
+
+      <div class="right-menu-sec admin-right login-user-menu col-lg-3">
+        <ul class="list-unstyled d-flex m-0 align-items-center justify-content-end">
+           <li class="fb-list-btn">
+              <div class="dropdown  main-page-dr favarite-btn">
+                <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="fv-icon"> </span>   <span class="favr-text"> Tal revive  </span> 
+                </button>
+                <ul class="dropdown-menu d-none" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+
+           </li>
+          <li class="d-none">
+            <a href="#"> Login </a>
+          </li>
+          <li>
+            <a href="#" class="user-icon-btn border-0"> 
+               <figure class="mb-0">
+                   <img src="images/usericon.svg" alt="user-icon"/>
+               </figure>    
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </header>  
+
+<div id="products-details-main">
+      <div class="banner-part listing-banner float-start products-banner search-banner w-100" >
+         <div class="container p-0">
+            <div class="content-section mx-auto ">
+                <div class="d-flex justify-content-between align-items-center">
+                        <div class="dropdown admin-dashbord-dp">
+                            <button id="dLabel" class="dropdown-select ps-0 btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="cl-text"> Upload </span> 
+                            <span class="caret d-none d-lg-block"></span>
+                            </button>
+                            <ul class="dropdown-menu comon-ul radio shadow border-0" aria-labelledby="dLabel">
+                            <li>
+                            <label class="dropdown-item" id="upload-select">
+                                <input class="jRadioDropdown" type="radio" value="001" name="alphabet">
+                                Upload
+                                </label>
+                            </li>
+                            <li>
+                            <label class="dropdown-item" id="download-select">
+                                <input class="jRadioDropdown" type="radio" value="002" name="alphabet">
+                                Download
+                                </label>
+                            </li>
+                            <li>
+                            <label class="dropdown-item" id="customers-select">
+                                <input class="jRadioDropdown" type="radio" value="003" name="alphabet">
+                                Customers
+                                </label>
+                            </li>
+                            <li>
+                            <label class="dropdown-item" id="revenue-select">
+                                <input class="jRadioDropdown" type="radio" value="004" name="alphabet">
+                                Revenue
+                                </label>
+                            </li>
+                            <li>
+                            
+                            
+                            </ul>
+                        </div>
+
+                        <a class="btn plus-button" data-bs-toggle="offcanvas" data-bs-target="#uploadbtn" aria-controls="offcanvasRight"> <i class="fas fa-plus"></i> </a>
+                </div>
+
+               <h6 class="mb-3" > Showing <b> 7,876 (10.45%) </b> out of 298,098 users </h6>
+               <div class="mt-2" >
+                     <div class="user-filter d-flex align-items-center">
+                        <div class="from-sec ">
+                           <div class="d-flex justify-content-between align-items-center">
+                              
+                                 <div class="form-group d-flex align-items-center">
+                                    <button class="btn srch-btn">
+                                        <img src="images/search-icn.svg"/>
+                                    </button>
+                                    <input type="text" class="form-control" placeholder="Music"/>
+                                    <div class="ser-dropdown ms-md-0">
+                                        <div class="dropdown">
+                                            <button id="cate" class="dropdown-select-new btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="cl-text">  Color icons </span> 
+                                            <span class="caret d-none d-lg-block"></span>
+                                            </button>
+                                            <ul class="dropdown-menu new-add radio shadow border-0" aria-labelledby="cate">
+                                            <li>
+                                            <label class="dropdown-item">
+                                                <input class="jRadioDropdown" type="radio" value="10" name="caticon">
+                                                Icons
+                                                </label>
+                                            </li>
+                                            <li>
+                                            <label class="dropdown-item">
+                                                <input class="jRadioDropdown" type="radio" value="11" name="caticon">
+                                                Illusration
+                                                </label>
+                                            </li>
+                                            <li>
+                                            <label class="dropdown-item">
+                                                <input class="jRadioDropdown" type="radio" value="12" name="caticon">
+                                               Emoticons
+                                                </label>
+                                            </li>
+                                            <li>
+                                            <label class="dropdown-item">
+                                                <input class="jRadioDropdown" type="radio" value="13" name="caticon">
+                                                Symbels
+                                                </label>
+                                            </li>
+                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 
+                              
+                              
+                           </div>
+                        </div>
+                        <div class="group-button1">
+                           <button type="button" class="btn colom-btn">
+                              Columns
+                           </button>
+                           <button type="button" class="btn filter-btn" data-bs-toggle="offcanvas" data-bs-target="#userfilter" aria-controls="offcanvasRight">
+                           <span> 5 </span> Filters
+                           </button>
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <section class="total-body products-page pt-4 search-body float-start w-100">
+      
+         
+            <div class="filter-with-tabs-section">
+                  <div class="container p-0">
+                      <div class="d-flex td-tab-menu justify-content-between align-items-center">
+                            <div class="col-lg-6">
+                                <ul class="nav nav-tabs align-items-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="user-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Icons</button>
+                                    
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="collections-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Collections</button>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                    <div id="user-grid-div">
+
+                                        <div class="hide-show-button d-flex align-items-center ms-auto">
+                                            <div class="plush-div1 ms-auto me-2">
+                                                <button type="button" class="btn cm-icon-bn">
+                                                <i class="fas fa-plus"></i>
+                                                </button>
+                                                <button type="button" class="btn cm-icon-bn">
+                                                <i class="fas fa-minus"></i>
+                                                </button>
+
+                                        </div>
+                                            <a id="grid">
+                                                <i class="bi bi-grid-fill"></i>
+                                            </a>
+                                            <a id="list"  class="active">
+                                                <i class="fas fa-bars"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div id="collections-grid-div">
+                                        <div class="hide-show-button d-flex align-items-center ms-auto">
+                                            
+                                            <a id="collections-grid">
+                                                <i class="bi bi-grid-fill"></i>
+                                            </a>
+                                            <a id="collections-list"  class="active">
+                                                <i class="fas fa-bars"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                      </div>
+
+
+                     <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                            <div id="list-vew-div">
+                                <div class="user-icon-list-div products-table">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="ps-lg-0">
+                                                <div class="form-check comon-all-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label ps-3" for="flexCheckDefault">
+                                                    Preview
+                                                </label>
+                                            </div></th>
+                                            <th scope="col">Total download </th>
+                                            <th scope="col">Free download</th>
+                                            <th scope="col" data-type="string" class="cr-pointer">Pay download  <i class="fas fa-arrow-up"></i></th>
+                                            <th scope="col" data-type="number" class="cr-pointer">Upload date <i class="fas fa-arrow-down"></i></th>
+                                            <th scope="col">Style</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="ps-lg-0"> 
+                                                <div class="form-check comon-all-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    <img src="images/table-list1.svg" alt="icon"/>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>1,000</td>
+                                            <td>1,000</td>
+                                            <td>123</td>
+                                            <td  class="score">20 Mar 2022</td>
+                                            <td>Bold</td>
+                                            <td> Live </td>
+                                            <td>
+                                                <div class="dropdown comon-dots">
+                                                    <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                       <img src="images/dots-icons.svg" alt="dots"/>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                      <li><a class="dropdown-item" href="#">View user</a></li>
+                                                      <li><a class="dropdown-item" href="#">Block user</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-lg-0"> 
+                                                <div class="form-check comon-all-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        <img src="images/table-list2.svg" alt="icon"/>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>1,000</td>
+                                            <td>1,000</td>
+                                            <td>8</td>
+                                            <td  class="score">20 Mar 2022</td>
+                                            <td>Bold</td>
+                                            <td> Live </td>
+                                            <td>
+                                                <div class="dropdown comon-dots">
+                                                    <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                       <img src="images/dots-icons.svg" alt="dots"/>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                      <li><a class="dropdown-item" href="#">View user</a></li>
+                                                      <li><a class="dropdown-item" href="#">Block user</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div id="grid-view-div" class="user-fv-icon new-hover-effect">
+                                <div class="inside-comon-icons-tabs mt-4 ">
+                     
+                                    <div class="row ">
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/business-presentation1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="1"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/chess-knight1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="2"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/leader1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="3"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/presentation-chart1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="4"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/user-time1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="5"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/suitcase1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="6"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a  class="icon-mg">
+                                             <figure> <img src="images/icons/presentation1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="7"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/megaphone1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="8"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a  class="icon-mg">
+                                             <figure> <img src="images/icons/hierarchy1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="9"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/handshake2.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="10"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                             <a  class="icon-mg">
+                                                <figure> <img src="images/icons/global1.svg" alt="svg"/> </figure> 
+                                             </a>
+                                             <a class="showSingle plus-section" target="11"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                     
+                                       
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a  class="icon-mg">
+                                             <figure> <img src="images/icons/calculator1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="12"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                             <a class="icon-mg">
+                                                <figure> <img src="images/icons/calculation2.svg" alt="svg"/> </figure> 
+                                             </a>
+                                             <a class="showSingle plus-section" target="13"> <i class="fas fa-plus"></i> </a>
+                                          </div>
+                     
+                     
+                                       
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/connection1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="14"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/court-gavel1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="15"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/credit-cards1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="16"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/gold-stack1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="17"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/idea-bulb1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="18"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/office-building1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="19"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/organization1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="20"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                             <a class="icon-mg">
+                                                <figure> <img src="images/icons/achievement-flag1.svg" alt="svg"/> </figure> 
+                                             </a>
+                                             <a class="showSingle plus-section" target="21"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                             <a class="icon-mg">
+                                                <figure> <img src="images/icons/brainstorming-head1.svg" alt="svg"/> </figure> 
+                                             </a>
+                                             <a class="showSingle plus-section" target="22"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                     
+                                       
+                                       
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/businessman1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="23"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/businessman2.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="24"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/businessman3.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="25"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/chat-contact1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="26"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/face-scanner1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="27"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/female1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="28"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/female-account1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="29"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/group1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="30"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                             <a class="icon-mg">
+                                                <figure> <img src="images/icons/head1.svg" alt="svg"/> </figure> 
+                                             </a>
+                                             <a class="showSingle plus-section" target="31"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                                       
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/id-card1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="32"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/identity-card1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="33"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/male1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="34"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/male-account1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="35"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/Group.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="36"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/man-and-woman1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="37"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/man-lead-man1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="38"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/man-lead-woman1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="39"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                    
+                     
+                                       <div class="comon-icons-tbs fv-list">
+                                          <a class="btn whish-bn1-new"> <i class="fas fa-heart"></i> </a>
+                                          <a class="icon-mg">
+                                             <figure> <img src="images/icons/man-leader1.svg" alt="svg"/> </figure> 
+                                          </a>
+                                          <a class="showSingle plus-section" target="40"> <i class="fas fa-plus"></i> </a>
+                                       </div>
+                     
+                                    </div>
+                                 
+                                
+            
+                              </div>
+                            </div>
+
+
+                           
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div id="list-vew-inside-div-collections">
+                                <div class="user-icon-list-div products-table">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="ps-lg-0">
+                                                <div class="form-check comon-all-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Name
+                                                </label>
+                                            </div></th>
+                                            <th scope="col">Total icons  </th>
+                                            <th scope="col">Total download </th>
+                                            <th scope="col" data-type="string" class="cr-pointer">Free download </th>
+                                            <th scope="col" data-type="number" class="cr-pointer">Pay download  </th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="ps-lg-0"> 
+                                                <div class="form-check comon-all-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    <img src="images/table-list1.svg" alt="icon"/>
+                                                    </label>
+                                                   <span id="icon-details" class="ps-3"> Music </span> 
+                                                </div>
+                                            </td>
+                                            <td>180</td>
+                                            <td>1,000</td>
+                                            <td>1,000</td>
+                                            <td>123</td>
+                                            <td> Live </td>
+                                            <td>
+                                                <div class="dropdown comon-dots">
+                                                    <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                       <img src="images/dots-icons.svg" alt="dots"/>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                      <li><a class="dropdown-item" href="#">View user</a></li>
+                                                      <li><a class="dropdown-item" href="#">Block user</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-lg-0"> 
+                                                <div class="form-check comon-all-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        <img src="images/table-list2.svg" alt="icon"/>
+                                                    </label>
+                                                    <span class="ps-3"> Flags </span> 
+                                                </div>
+                                            </td>
+                                            <td>180</td>
+                                            <td>1,000</td>
+                                            <td>1,000</td>
+                                            <td>123</td>
+                                            <td> Live </td>
+                                            <td>
+                                                <div class="dropdown comon-dots">
+                                                    <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                       <img src="images/dots-icons.svg" alt="dots"/>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                      <li><a class="dropdown-item" href="#">View user</a></li>
+                                                      <li><a class="dropdown-item" href="#">Block user</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div id="grid-vew-inside-div-collections">
+                                <div class="collection-total-div mt-5">
+
+                                    
+
+                                        <div  class="gd-vew collections-div-section w-100">
+                                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+                                                <div class="col ">
+                                                    <a href="#" class="comon-grid-div">
+                                                        <div class="col-9 mx-auto">
+                                                            <div class="icon-section">
+                                                            <div class="row row-cols-3 g-3">
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/interface-grid/interface-i1.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/interface-grid/interface-i2.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                        <figure>
+                                                                        <img src="images/icons/interface-grid/interface-i3.svg" alt="icn1"/>
+                                                                        </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/interface-grid/interface-i4.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/interface-grid/interface-i5.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/interface-grid/interface-i6.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <h5 class="mb-0"> <span class="st-titel col-7 m-0"> Interface Essential </span> <span> 187 Icons </span> </h5>
+                                                        </div>
+                                                        <button class="showSingle plus-section" target="1"> <i class="fas fa-plus"></i> </button>
+                                                    </a>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#" class="comon-grid-div">
+                                                        <h6 class="new-1 btn"> New </h6>
+                                                        <div class="col-9 mx-auto">
+                                                            <div class="icon-section">
+                                                            <div class="row row-cols-3 g-3">
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/design/design1.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/design/design2.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                        <figure>
+                                                                        <img src="images/icons/design/design3.svg" alt="icn1"/>
+                                                                        </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/design/design4.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/design/design5.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/design/design6.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <h5 class="text-center mb-0"> Design <span> 187 Icons </span> </h5>
+                                                        </div>
+                                                        <button class="showSingle plus-section" target="1"> <i class="fas fa-plus"></i> </button>
+                                                    </a>
+                                                </div>
+                                                <div class="col ">
+                                                    <a href="#" class="comon-grid-div">
+                                                        <div class="col-9 mx-auto">
+                                                            <div class="icon-section">
+                                                            <div class="row row-cols-3 g-3">
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food/food1.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food/food2.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                        <figure>
+                                                                        <img src="images/icons/food/food3.svg" alt="icn1"/>
+                                                                        </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food/food4.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food/food5.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food/food6.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <h5 class="text-center mb-0"> Food <span> 187 Icons </span> </h5>
+                                                        </div>
+                                                        <button class="showSingle plus-section" target="1"> <i class="fas fa-plus"></i> </button>
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="col ">
+                                                    <a href="#" class="comon-grid-div">
+                                                        <div class="col-9 mx-auto">
+                                                            <div class="icon-section">
+                                                            <div class="row row-cols-3 g-3">
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/social/social-i1.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/social/social-i2.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                        <figure>
+                                                                        <img src="images/icons/social/social-i3.svg" alt="icn1"/>
+                                                                        </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/social/social-i4.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/social/social-i5.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/social/social-i6.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <h5 class="text-center mb-0"> Social <span> 187 Icons </span> </h5>
+                                                        </div>
+                                                        <button class="showSingle plus-section" target="1"> <i class="fas fa-plus"></i> </button>
+                                                    </a>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#" class="comon-grid-div">
+                                                        <div class="col-9 mx-auto">
+                                                            <div class="icon-section">
+                                                            <div class="row row-cols-3 g-3">
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food2/food-i1.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food2/food-i2.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                        <figure>
+                                                                        <img src="images/icons/food2/food-i3.svg" alt="icn1"/>
+                                                                        </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food2/food-i4.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food2/food-i5.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food2/food-i6.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <h5 class="text-center mb-0"> Food <span> 187 Icons </span> </h5>
+                                                        </div>
+                                                        <button class="showSingle plus-section" target="1"> <i class="fas fa-plus"></i> </button>
+                                                    </a>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#" class="comon-grid-div">
+                                                        <div class="col-9 mx-auto">
+                                                            <div class="icon-section">
+                                                            <div class="row row-cols-3 g-3">
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food3/food-i1.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food3/food-i2.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                        <figure>
+                                                                        <img src="images/icons/food3/food-i3.svg" alt="icn1"/>
+                                                                        </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food3/food-i4.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food3/food-i5.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <figure>
+                                                                        <img src="images/icons/food3/food-i6.svg" alt="icn1"/>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <h5 class="text-center mb-0"> Food <span> 187 Icons </span> </h5>
+                                                        </div>
+                                                        <button class="showSingle plus-section" target="1"> <i class="fas fa-plus"></i> </button>
+                                                    </a>
+                                                </div>
+                                            
+                                          
+                                            
+                                            </div>
+                                        </div>
+
+                                        
+                                </div>
+                            </div>
+                        </div>
+<!--  comon select option foooter -->
+                            <div class="select-icon-option">
+                            
+                                <div class="d-md-flex">
+                                    <div class="left-select-option d-flex align-items-center">
+                                    <div class="form-check comon-all-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                        <label class="form-check-label me-1" for="flexCheckDefault">
+                                            2 icon selected
+                                        </label>
+                                        </div>
+                                        <span class="ms-4"> <a id="#"> Select all icons  </a> that match to this filter</span>
+                                        
+                                    </div>
+                                    <div class="right-secte-option d-flex justify-content-center mt-5 mt-md-0 justify-content-lg-between align-items-center ms-auto ">
+                                        <button type="button" class="btn dele-btn"  data-bs-toggle="offcanvas" data-bs-target="#multieditfilter" aria-controls="offcanvasRight"> 
+                                        <img src="images/trash-icon.svg" alt="tra"/> Delete</button>
+                                        <button type="button" class="btn dele-btn" data-bs-toggle="offcanvas" data-bs-target="#editicondiv" aria-controls="offcanvasRight"> 
+                                            <img src="images/edit--icon.svg" alt="edit"/> Edit</button>
+
+                                    </div>
+                                </div>
+                            
+                            
+                            </div>
+
+                            <div class="next-buuton-div d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                <div class="left-page-number order-3 order-lg-1 d-flex align-items-center">
+                                    Users per page
+                                    
+
+                                    <div class="cm-drop-down ms-3">
+                                        <select class="day-selcet-btn">
+                                           <option value="" data-display-text="23">23</option>
+                                           <option value="apples">One</option>
+                                           <option value="bananas">Two</option>
+                                           <option value="oranges">Oranges</option>
+                                        </select>
+                                     </div>
+                                </div>
+
+                                <button type="text" class="btn new-btn order-1  order-lg-2"> Next page <i class="fas fa-angle-right"></i> </button>
+                                <div class="right-arrow-btn d-flex align-items-center order-2 my-4 my-lg-0 order-lg-3">
+                                    
+                                      <input type="text" class="form-control num-box" placeholder="23"/>
+                                    <div class="arrow-buuton-div">
+                                        <span>of 1,761 </span>
+                                        <button type="button" class="btn cm-arrow-2">
+                                            <i class="fas fa-angle-left"></i>
+                                        </button>
+                                        <button type="button" class="btn ms-2 cm-arrow-2">
+                                            <i class="fas fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                     </div>
+                  </div>
+            </div>
+      
+      </section>
+</div>
+<div id="icon-user-div">
+
+    <div class="banner-part float-start w-100 fav-banner" >
+        <div class="container">
+           <a id="back-btn-next" class="btn back-button ps-0"> <i class="fas fa-angle-left"></i> back </a>
+           <div class="content-section col-lg-12 mx-auto ">
+              <div class="justify-content-between align-items-center">
+                 <div class="top-conent-section float-start">
+                    <h1 class="mb-0 d-flex align-items-center">Speaker icon <span class="pay-btn-span"> Pay </span> </h1>
+                    <h6 class="mb-2 mt-2 " >Status: Active
+                       <span class="online"></span>
+                        </h6>
+                    <p class="mb-0 time-hr">Last download: 2 min ago</p>
+                 </div>
+                 <figure class="float-end mb-0">
+
+                    <img src="images/big-icon.svg" alt="img">
+                 </figure>
+                 
+              </div>
+              
+              
+           </div>
+        </div>
+     </div>
+
+
+     <section class="total-body pt-3 pt-lg-5 float-start w-100">
+
+        <div class="container">
+           <div class="row gx-lg-5 row-cols-1 row-cols-lg-2">
+                 <div class="col">
+                    <div class="user-comon-details">
+                       <h5 class="justify-content-between"> File information  <a id="#" class="icon-ed"> <img src="images/edit-new.svg" alt="svg"/> </a> </h5>
+                       <ul class="list-unstyled">
+                          <li> <span>  Title </span> Specaker icon </li>
+                          <li> <span>  Description </span>Isolated speaker </li>
+                          <li> <span>  Tags </span> 20 Tags</li>
+                          <li> <span> File type</span> SVG</li>
+                          <li> <span>  Main category name </span> Music</li>
+                          <li> <span>  Sub category name </span>Icons </li>
+                          <li> <span>  File style </span> Solid</li>
+                          <li> <span>  Number of files on categories</span> 121</li>
+                          <li> <span>  Number of styles connect </span> 11</li>
+                          <li> <span>  File status </span>Live</li>
+                       </ul>
+                    </div>
+                 </div>
+
+                 <div class="col flex-column justify-content-lg-end">
+                    <div class="user-comon-details ms-lg-0 d-block">
+                       <h5> File activity </h5>
+                       <ul class="list-unstyled">
+                          <li> <span> Total download </span> 10,000 </li>
+                          <li> <span> Free download  </span> 8,000 (80%) </li>
+                          <li> <span> Pro download </span> 1,500 (15%)</li>
+                       </ul>
+                    </div>
+
+                    <div class="user-comon-details ms-lg-0 d-block">
+                        <h5>Actions </h5>
+                        <ul class="list-unstyled">
+                           <li> <span>  Delete icon </span> <a id="#"> Click to delete <i class="fas fa-angle-right"></i> </a> </li>
+                           <li> <span>  File status </span> <a id="#"> Live <i class="fas fa-angle-down"></i> </a></li>
+                          
+                        </ul>
+                     </div>
+                 </div>
+
+                
+
+           </div>
+        </div>
+         
+     
+     
+         
+         
+      </section>
+</div>
+      
+
+
+
+
+
+      <div class="offcanvas offcanvas-end user-canvas" tabindex="-1" id="userfilter" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Columns filters
+             <span class="d-block"> Selected <b> 5 </b> out of <b> 34 </b> columns </span>
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="images/big-close.svg" alt="close"/>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                   role="tab" aria-controls="home" aria-selected="true">Filters</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" 
+                  role="tab" aria-controls="profile" aria-selected="false">Columns</button>
+                </li>
+               
+            </ul>
+            <div class="tab-content pt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="search-modal">
+                    <div class="form-group mb-4 search-div2 d-flex align-items-center form-control">
+                       
+                       <input type="text" class="form-control" placeholder="Search"/>
+                       <button type="submit" class="btn "><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="comon-check-div">
+                       <h5> File information </h5>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Title
+                        </label>
+                      </div>
+         
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Description
+                        </label>
+                      </div>
+         
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Tags
+                        </label>
+                      </div>
+         
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Main category
+                        </label>
+                      </div>
+         
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Sub category
+                        </label>
+                      </div>
+         
+         
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Number of files on categories
+                        </label>
+                      </div>
+         
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Number of styles connect
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Status
+                        </label>
+                      </div>
+         
+         
+                    </div>
+         
+                    <div class="comon-check-div mt-3">
+                     <h5>File activity </h5>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Total download
+                      </label>
+                    </div>
+         
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Free download 
+                      </label>
+                    </div>
+         
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Pro download 
+                      </label>
+                    </div>
+         
+         
+                    </div>
+         
+                    <div class="d-flex spa-stick align-items-center">
+                        <input type="button" class="btn save-btn2" value="Save as default view">
+                        <input type="button" class="btn rest-btn2 ms-3" value="Reset">
+                    </div>
+         
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="search-modal">
+                    <div class="form-group mb-4 search-div2 d-flex align-items-center form-control">
+                       
+                       <input type="text" class="form-control" placeholder="Search"/>
+                       <button type="submit" class="btn "><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="comon-check-div">
+                       <h5> File information </h5>
+                      
+                       <div class="drag-div d-flex justify-content-between align-items-center">
+                           <a href="#"> <span>1</span> Title </a>
+                           <div class="drag-btn">
+                              <img src="images/filter-icon.svg" alt="drag"/>
+                           </div>
+                       </div>
+
+                       <div class="drag-div d-flex justify-content-between align-items-center">
+                        <a href="#"> <span>2</span> Description </a>
+                        <div class="drag-btn">
+                           <img src="images/filter-icon.svg" alt="drag"/>
+                        </div>
+                      </div>
+
+                      <div class="drag-div d-flex justify-content-between align-items-center">
+                        <a href="#"> <span>3</span> Tags </a>
+                        <div class="drag-btn">
+                           <img src="images/filter-icon.svg" alt="drag"/>
+                        </div>
+                      </div>
+
+
+                      <div class="drag-div d-flex justify-content-between align-items-center">
+                        <a href="#"> <span>4</span> Total download </a>
+                        <div class="drag-btn">
+                           <img src="images/filter-icon.svg" alt="drag"/>
+                        </div>
+                      </div>
+
+
+                      <div class="drag-div d-flex justify-content-between align-items-center">
+                        <a href="#"> <span>5</span> Free download  </a>
+                        <div class="drag-btn">
+                           <img src="images/filter-icon.svg" alt="drag"/>
+                        </div>
+                      </div>
+
+
+                      <div class="drag-div d-flex justify-content-between align-items-center">
+                        <a href="#"> <span>6</span> Pro download   </a>
+                        <div class="drag-btn">
+                           <img src="images/filter-icon.svg" alt="drag"/>
+                        </div>
+                      </div>
+                     
+                     
+         
+                     
+         
+                      
+         
+         
+         
+                    </div>
+         
+         
+                    <div class="d-flex mt-5 align-items-center">
+                        <input type="button" class="btn save-btn2" value="Save as default view">
+                        <input type="button" class="btn rest-btn2 ms-3" value="Reset">
+                    </div>
+         
+                </div>
+            </div>
+           
+            </div>
+
+
+            
+        </div>
+      </div>
+
+
+      <!-- upload modal -->
+
+      <div class="offcanvas offcanvas-end user-canvas" tabindex="-1" id="uploadbtn" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Upload new file
+             <span class="d-block"> Uploade the files that you want to edit</span>
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="images/big-close.svg" alt="close"/>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+             
+             <div class="file-upload-div">
+                <h5> Files </h5>
+
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">
+                        <b class="d-block"> Upload SVG files </b>
+                        Drag and drop or click here to<br/> browse files</span>
+                    <input type="file" name="myFile" class="drop-zone__input">
+                </div>
+
+
+                <div class="d-flex spa-stick align-items-center">
+                    <button class="btn save-btn2 w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#sucessdiv" aria-controls="offcanvasRight"> Upload files</button>
+                   
+                   
+                </div>
+
+             </div>
+
+
+            
+        </div>
+      </div>
+
+
+       <!-- success modal -->
+
+       <div class="offcanvas offcanvas-end user-canvas" tabindex="-1" id="sucessdiv" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Sucsess
+             <span class="d-block"> <b> 100 </b> out of <b> 100 </b> files upload successfully </span>
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="images/big-close.svg" alt="close"/>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+             
+             <div class="sucess-st-upload-div">
+                <figure class="mx-auto d-table">
+                    <img src="images/check-right.svg" alt="che"/>
+                </figure>
+
+                <h3 class="text-center"> Sucsess </h3>
+               <p class="text-center col-lg-10 mx-auto"> 100 SVG files upload successfully and waithing as review status on files page.</p>
+
+
+                <div class="d-flex spa-stick align-items-center">
+                    <button class="btn save-btn2 w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#editmdfilter" aria-controls="offcanvasRight"> Click to edit files</button>
+                   
+                   
+                </div>
+
+             </div>
+
+
+            
+        </div>
+      </div>
+
+
+      <!-- edit modal -->
+
+
+      <div class="offcanvas offcanvas-end user-canvas" tabindex="-1" id="editmdfilter" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">New collection
+             <span class="d-block"> Fill all information that need </span>
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="images/big-close.svg" alt="close"/>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#informaton" type="button"
+                   role="tab" aria-controls="home" aria-selected="true">Information</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#cover" type="button" 
+                  role="tab" aria-controls="profile" aria-selected="false">Cover</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#file" type="button" 
+                    role="tab" aria-controls="profile" aria-selected="false">Files</button>
+                </li>
+               
+            </ul>
+            <div class="tab-content pt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="informaton" role="tabpanel" aria-labelledby="home-tab">
+                <div id="edite-flter2">
+                     <div class="comon-edit-divsb">
+                         <h5> Collection information </h5>
+                         <div class="form-group">
+                             <label> Name </label>
+                             <input type="text" class="form-control" placeholder="Speaker icon"/>
+                         </div>
+                         <div class="form-group">
+                            <label> Description </label>
+                            <input type="text" class="form-control" placeholder="Speaker icon"/>
+                         </div>
+
+                         <div class="form-group">
+                            <div class="d-md-flex justify-content-between align-items-center">
+                                <label> Tags </label>  <span class="num-nj"> 8/30 </span>
+                            </div>
+                            <div class="d-md-flex form-control justify-content-between align-items-center ne-frm">
+                                <input type="text" class="form-control" placeholder="Speaker icon"/>
+                                <div class="col-lg-1">
+                                    <span class="count-number8">8</span>
+                                </div>
+                                
+                            </div>
+                            
+                         </div>
+                         <div class="form-group">
+                           <div class="row row-cols-1 row-cols-lg-4">
+                               
+                              <div class="col"> 
+                               <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                </span>  </a> 
+                              </div>
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a> 
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+                              
+                           </div>
+                         </div>
+
+                         <div class="form-group">
+                            <label>Main category </label>
+
+                            <div class="cm-drop-down dy-btn">
+                                <select class="day-selcet-btn">
+                                   <option value="" data-display-text="Illustration">Illustration</option>
+                                   <option value="apples">One</option>
+                                   <option value="bananas">Two</option>
+                                   <option value="oranges">Four</option>
+                                </select>
+                            </div>
+                           
+                         </div>
+
+
+                         <div class="form-group">
+                            <label>Sub category </label>
+                            
+
+                              <div class="cm-drop-down dy-btn">
+                                <select class="day-selcet-btn">
+                                   <option value="" data-display-text="Music">Music</option>
+                                   <option value="apples">One</option>
+                                   <option value="bananas">Two</option>
+                                   <option value="oranges">Four</option>
+                                </select>
+                            </div>
+                         </div>
+
+                         <div class="form-group">
+                            <label>Style </label>
+                            
+
+                              <div class="cm-drop-down dy-btn">
+                                <select class="day-selcet-btn">
+                                   <option value="" data-display-text="Solid">Solid</option>
+                                   <option value="apples">Bold</option>
+                                   <option value="bananas">Two</option>
+                                   <option value="oranges">Four</option>
+                                </select>
+                             </div>
+
+                         </div>
+
+                         <div class="form-group">
+                            <label>Licence </label>
+                            
+
+                              <div class="cm-drop-down dy-btn">
+                                <select class="day-selcet-btn">
+                                   <option value="" data-display-text="Free & Pay">Free & Pay</option>
+                                   <option value="apples">Free</option>
+                                   <option value="bananas">Pay</option>
+                                </select>
+                              </div>
+
+                         </div>
+
+                         <div class="form-group">
+                            <label>Add label </label>
+                            <div class="d-flex justify-content-between align-items-center add-label" >
+                                <input type="text" class="form-control" placeholder="NEW"/>
+
+                                <button class="switch-btn onsclass">
+                                    <span class="on"> ON </span>
+                                    <span class="off"> OFF </span>
+                                </button>
+                            </div>
+                         </div>
+
+
+                         <div class="form-group">
+                            <label>Featured </label>
+                           
+
+                              <div class="cm-drop-down dy-btn">
+                                <select class="day-selcet-btn">
+                                   <option value="" data-display-text="Yes">Yes</option>
+                                   <option value="apples">No</option>
+                                   <option value="bananas">Yes</option>
+                                </select>
+                              </div>
+                         </div>
+
+                         <div class="d-flex spa-stick align-items-center">
+                            <a  class="btn save-btn2 w-100" id="save-change-btn" > Save changes </a>
+                           
+                           
+                        </div>
+
+                     </div>
+                </div>
+
+                <div id="edite-flter3">
+                    <div class="comon-edit-divsb">
+                        <h5> Collection information </h5>
+
+                        <div class="form-group">
+                            <label>Action type </label>
+ 
+                            <div class="cm-drop-down dy-btn">
+                                <select class="day-selcet-btn">
+                                   <option value="" data-display-text="Illustration">Replace data</option>
+                                   <option value="apples">Delete data</option>
+                                   <option value="bananas">Add new data</option>
+                                </select>
+                            </div>
+                           
+                         </div>
+                        <div class="form-group">
+                            <label> Name </label>
+                            <input type="text" class="form-control" placeholder="Speaker icon"/>
+                        </div>
+                        <div class="form-group">
+                           <label> Description </label>
+                           <input type="text" class="form-control" placeholder="Speaker icon"/>
+                        </div>
+
+                        <div class="form-group">
+                           <div class="d-md-flex justify-content-between align-items-center">
+                               <label> Tags </label>  <span class="num-nj"> 8/30 </span>
+                           </div>
+                           <div class="d-md-flex form-control justify-content-between align-items-center ne-frm">
+                               <input type="text" class="form-control" placeholder="Speaker icon"/>
+                               <div class="col-lg-1">
+                                   <span class="count-number8">8</span>
+                               </div>
+                               
+                           </div>
+                           
+                        </div>
+                        <div class="form-group">
+                           <div class="row row-cols-1 row-cols-lg-4">
+                               
+                              <div class="col"> 
+                               <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                </span>  </a> 
+                              </div>
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a> 
+                              </div>
+
+                              <div class="col"> 
+                                 <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a>
+                              </div>
+                              
+                           </div>
+                        </div>
+
+                        <div class="form-group">
+                           <label>Main category </label>
+
+                           <div class="cm-drop-down dy-btn">
+                               <select class="day-selcet-btn">
+                                  <option value="" data-display-text="Illustration">Illustration</option>
+                                  <option value="apples">One</option>
+                                  <option value="bananas">Two</option>
+                                  <option value="oranges">Four</option>
+                               </select>
+                           </div>
+                          
+                        </div>
+
+
+                        <div class="form-group">
+                           <label>Sub category </label>
+                           
+
+                             <div class="cm-drop-down dy-btn">
+                               <select class="day-selcet-btn">
+                                  <option value="" data-display-text="Music">Music</option>
+                                  <option value="apples">One</option>
+                                  <option value="bananas">Two</option>
+                                  <option value="oranges">Four</option>
+                               </select>
+                           </div>
+                        </div>
+
+                        <div class="form-group">
+                           <label>Style </label>
+                           
+
+                             <div class="cm-drop-down dy-btn">
+                               <select class="day-selcet-btn">
+                                  <option value="" data-display-text="Solid">Solid</option>
+                                  <option value="apples">Bold</option>
+                                  <option value="bananas">Two</option>
+                                  <option value="oranges">Four</option>
+                               </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                           <label>Licence </label>
+                           
+
+                             <div class="cm-drop-down dy-btn">
+                               <select class="day-selcet-btn">
+                                  <option value="" data-display-text="Free & Pay">Free & Pay</option>
+                                  <option value="apples">Free</option>
+                                  <option value="bananas">Pay</option>
+                               </select>
+                             </div>
+
+                        </div>
+
+                        <div class="form-group">
+                           <label>Add label </label>
+                           <div class="d-flex  justify-content-between align-items-center add-label" >
+                               <input type="text" class="form-control" placeholder="NEW"/>
+
+                               <button class="switch-btn onsclass">
+                                   <span class="on"> ON </span>
+                                   <span class="off"> OFF </span>
+                               </button>
+                           </div>
+                        </div>
+
+
+                        <div class="form-group">
+                           <label>Featured </label>
+                          
+
+                             <div class="cm-drop-down dy-btn">
+                               <select class="day-selcet-btn">
+                                  <option value="" data-display-text="Yes">Yes</option>
+                                  <option value="apples">No</option>
+                                  <option value="bananas">Yes</option>
+                               </select>
+                             </div>
+                        </div>
+
+                        <div class="d-flex spa-stick align-items-center">
+                           <a  class="btn save-btn2 w-100" id="save-change-btn2" > Apply changes to
+                            <span class="d-block"> 8 collection and 3 fields out of 5 </span> 
+                           </a>
+                          
+                          
+                       </div>
+
+                    </div>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="cover" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="cover-div1">
+                    <a href="#" class="comon-grid-div">
+                        
+                        <div class="col-9 mx-auto">
+                        <div class="icon-section">
+                            <div class="row row-cols-3 g-3">
+                                <div class="col">
+                                    <figure>
+                                    <img src="images/icons/design/design1.svg" alt="icn1"/>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure>
+                                    <img src="images/icons/design/design2.svg" alt="icn1"/>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure>
+                                        <img src="images/icons/design/design3.svg" alt="icn1"/>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure>
+                                    <img src="images/icons/design/design4.svg" alt="icn1"/>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure>
+                                    <img src="images/icons/design/design5.svg" alt="icn1"/>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure>
+                                    <img src="images/icons/design/design6.svg" alt="icn1"/>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="text-center mb-0"> <span>  Interface Essential </span> <span> 187 Icons </span> </h5>
+                        </div>
+                    </a>
+
+                    <div class="d-flex spa-stick align-items-center">
+                        <a  class="btn save-btn2 w-100" id="save-change-btn" > Save changes </a>
+                       
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="file" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="file-divs6">
+                    <div class="inside-comon-icons-tabs mt-0 comon-space-divs-new">
+                     
+                        <div class="row">
+         
+                           <div class="comon-icons-tbs fv-list">
+                            
+                             
+                                 <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                                 <a class="icon-mg">
+                                    <figure> <img src="images/icons/business-presentation1.svg" alt="svg"/> </figure> 
+                                 </a>
+                                 <a class="showSingle plus-section" target="1"> 
+                                    <span class="plus-ic">
+                                       <!-- <img src="images/small-plus.png"/> -->
+                                       <img src="images/small-plus.png"/>
+                                    </span>
+                                    <span class="minis-ic">
+                                       <img src="images/minus-ic.svg"/>
+                                    </span>
+                                 </a>
+                      
+
+
+                           </div>
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/chess-knight1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="2">
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/leader1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="3"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/presentation-chart1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="4"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span> 
+                              </a>
+                           </div>
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/user-time1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="5"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/suitcase1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="6"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a  class="icon-mg">
+                                 <figure> <img src="images/icons/presentation1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="7"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/megaphone1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="8"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a  class="icon-mg">
+                                 <figure> <img src="images/icons/hierarchy1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="9"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/handshake2.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="10"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                                 <a  class="icon-mg">
+                                    <figure> <img src="images/icons/global1.svg" alt="svg"/> </figure> 
+                                 </a>
+                                 <a class="showSingle plus-section" target="11"> 
+                                    <span class="plus-ic">
+                                       <img src="images/small-plus.png"/>
+                                    </span>
+                                    <span class="minis-ic">
+                                       <img src="images/minus-ic.svg"/>
+                                    </span>
+                                 </a>
+                           </div>
+         
+         
+                           
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a  class="icon-mg">
+                                 <figure> <img src="images/icons/calculator1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="12"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                                 <a class="icon-mg">
+                                    <figure> <img src="images/icons/calculation2.svg" alt="svg"/> </figure> 
+                                 </a>
+                                 <a class="showSingle plus-section" target="13"> 
+                                    <span class="plus-ic">
+                                       <img src="images/small-plus.png"/>
+                                    </span>
+                                    <span class="minis-ic">
+                                       <img src="images/minus-ic.svg"/>
+                                    </span>
+                                 </a>
+                              </div>
+         
+         
+                           
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/connection1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="14"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/court-gavel1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="15"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/credit-cards1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="16"> 
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/gold-stack1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="17">
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>   
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/idea-bulb1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="18">
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>   
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/office-building1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="19">
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>   
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/organization1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="20">
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>   
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                                 <a class="icon-mg">
+                                    <figure> <img src="images/icons/achievement-flag1.svg" alt="svg"/> </figure> 
+                                 </a>
+                                 <a class="showSingle plus-section" target="21">
+                                    <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>   
+                                 </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                                 <a class="icon-mg">
+                                    <figure> <img src="images/icons/brainstorming-head1.svg" alt="svg"/> </figure> 
+                                 </a>
+                                 <a class="showSingle plus-section" target="22">
+                                    <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>   
+                                 </a>
+                           </div>
+         
+         
+                           
+                           
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/businessman1.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="23">
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>   
+                              </a>
+                           </div>
+         
+                           <div class="comon-icons-tbs fv-list">
+                              <a class="btn whish-bn1-new"> <img src="images/fav-like.png"/> </a>
+                              <a class="icon-mg">
+                                 <figure> <img src="images/icons/businessman2.svg" alt="svg"/> </figure> 
+                              </a>
+                              <a class="showSingle plus-section" target="24">
+                                 <span class="plus-ic">
+                                    <img src="images/small-plus.png"/>
+                                 </span>
+                                 <span class="minis-ic">
+                                    <img src="images/minus-ic.svg"/>
+                                 </span>   
+                              </a>
+                           </div>
+
+
+         
+                         
+         
+                        
+         
+         
+         
+                           
+         
+                        
+         
+         
+                        </div>
+                     
+                    
+
+                  </div>
+
+                  <div class="d-flex spa-stick align-items-center">
+                    <a  class="btn save-btn2 w-100" id="save-change-btn" > Save collection preview </a>
+                   
+                   
+                  </div>
+
+
+                </div>
+            </div>
+           
+            </div>
+
+
+            
+        </div>
+      </div>
+
+<!--  single edit modal -->
+
+      <div class="offcanvas offcanvas-end user-canvas signgle-edit" tabindex="-1" id="editicondiv" aria-labelledby="offcanvasRightLabel">
+         <div class="offcanvas-header">
+           <h5 id="offcanvasRightLabel">Edit file
+              <span class="d-block"> Update file information </span>
+           </h5>
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+               <img src="images/big-close.svg" alt="close"/>
+           </button>
+         </div>
+         <div class="offcanvas-body">
+              
+            <div class="comon-edit-divsb mt-0">
+               <h5 class="mt-0"> File information
+                  </h5>
+               <div class="form-group">
+                   <label>  Title </label>
+                   <input type="text" class="form-control" placeholder="Speaker icon"/>
+               </div>
+               <div class="form-group">
+                  <label> Description </label>
+                  <input type="text" class="form-control" placeholder="Speaker icon"/>
+               </div>
+
+               <div class="form-group">
+                  <div class="d-md-flex justify-content-between align-items-center">
+                      <label> Tags </label>  <span class="num-nj"> 8/30 </span>
+                  </div>
+                  <div class="d-md-flex form-control justify-content-between align-items-center ne-frm">
+                      <input type="text" class="form-control" placeholder="Speaker icon"/>
+                      <div class="col-lg-1">
+                          <span class="count-number8">8</span>
+                      </div>
+                      
+                  </div>
+                  
+               </div>
+               <div class="form-group">
+                 <div class="row row-cols-1 row-cols-lg-4">
+                     
+                    <div class="col"> 
+                     <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                      </span>  </a> 
+                    </div>
+                    <div class="col"> 
+                       <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                       </span>  </a>
+                    </div>
+
+                    <div class="col"> 
+                       <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                       </span>  </a>
+                    </div>
+
+                    <div class="col"> 
+                       <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                       </span>  </a>
+                    </div>
+
+                    <div class="col"> 
+                       <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                       </span>  </a>
+                    </div>
+                    <div class="col"> 
+                       <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                       </span>  </a>
+                    </div>
+
+                    <div class="col"> 
+                       <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                       </span>  </a> 
+                    </div>
+
+                    <div class="col"> 
+                       <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                       </span>  </a>
+                    </div>
+                    
+                 </div>
+               </div>
+
+               <div class="form-group">
+                  <label>Main category </label>
+
+                  <div class="cm-drop-down dy-btn">
+                      <select class="day-selcet-btn">
+                         <option value="" data-display-text="Illustration">Illustration</option>
+                         <option value="apples">One</option>
+                         <option value="bananas">Two</option>
+                         <option value="oranges">Four</option>
+                      </select>
+                  </div>
+                 
+               </div>
+
+
+               <div class="form-group">
+                  <label>Sub category </label>
+                  
+
+                    <div class="cm-drop-down dy-btn">
+                      <select class="day-selcet-btn">
+                         <option value="" data-display-text="Music">Music</option>
+                         <option value="apples">One</option>
+                         <option value="bananas">Two</option>
+                         <option value="oranges">Four</option>
+                      </select>
+                  </div>
+               </div>
+
+               <div class="form-group">
+                  <label>Style </label>
+                  
+
+                    <div class="cm-drop-down dy-btn">
+                      <select class="day-selcet-btn">
+                         <option value="" data-display-text="Solid">Solid</option>
+                         <option value="apples">Bold</option>
+                         <option value="bananas">Two</option>
+                         <option value="oranges">Four</option>
+                      </select>
+                   </div>
+
+               </div>
+
+               <div class="form-group">
+                  <label>Licence </label>
+                  
+
+                    <div class="cm-drop-down dy-btn">
+                      <select class="day-selcet-btn">
+                         <option value="" data-display-text="Free & Pay">Free & Pay</option>
+                         <option value="apples">Free</option>
+                         <option value="bananas">Pay</option>
+                      </select>
+                    </div>
+
+               </div>
+
+
+               <div class="d-flex spa-stick align-items-center">
+                  <a  class="btn save-btn2 w-100" id="save-change-btn" > Save changes </a>
+                 
+                 
+              </div>
+
+           </div>
+ 
+ 
+             
+         </div>
+       </div>
+
+
+
+       <!-- multi edit filter -->
+
+
+       <div class="offcanvas offcanvas-end user-canvas" tabindex="-1" id="multieditfilter" aria-labelledby="offcanvasRightLabel">
+         <div class="offcanvas-header">
+           <h5 id="offcanvasRightLabel">Bulk edit files
+              <span class="d-block"> Selected 1 fields out of 6 </span>
+           </h5>
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+               <img src="images/big-close.svg" alt="close"/>
+           </button>
+         </div>
+         <div class="offcanvas-body">
+ 
+             <ul class="nav nav-tabs" id="myTab" role="tablist">
+                 <li class="nav-item" role="presentation">
+                   <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bascN" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Basic</button>
+                 </li>
+                 <li class="nav-item" role="presentation">
+                   <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#csvN" type="button" 
+                   role="tab" aria-controls="profile" aria-selected="false">CSV</button>
+                 </li>
+ 
+                 <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#listN" type="button" 
+                     role="tab" aria-controls="profile" aria-selected="false">Lists</button>
+                 </li>
+                
+             </ul>
+             <div class="tab-content pt-3" id="myTabContent">
+             <div class="tab-pane fade show active" id="bascN" role="tabpanel" aria-labelledby="home-tab">
+                 <div class="botom-space-new">
+                      <div class="comon-edit-divsb">
+                          <h5 >File information </h5>
+                          <div class="form-group">
+                              <div class="d-flex align-items-center mul-lable-n">
+                                 <div class="form-check comon-all-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                   
+                                </div>
+                                <label class="mb-0"> Title </label>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Speaker icon"/>
+                          </div>
+                          <div class="form-group">
+                           <div class="d-flex align-items-center mul-lable-n">
+                              <div class="form-check comon-all-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-m2" checked>
+                                
+                             </div>
+                             <label class="mb-0">  Description  </label>
+                           </div>
+                             <input type="text" class="form-control" placeholder="Speaker icon"/>
+                          </div>
+ 
+                          <div class="form-group">
+                             <div class="d-md-flex justify-content-between align-items-center">
+                              <div class="d-flex align-items-center mul-lable-n">
+                                 <div class="form-check comon-all-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-m3" checked>
+                                   
+                                </div>
+                                <label class="mb-0">  Tags  </label>
+                              </div>
+                                   <span class="num-nj"> 8/30 </span>
+                             </div>
+                             <div class="d-md-flex form-control justify-content-between align-items-center ne-frm">
+                                 <input type="text" class="form-control" placeholder="Speaker icon"/>
+                                 <div class="col-lg-1">
+                                     <span class="count-number8">8</span>
+                                 </div>
+                                 
+                             </div>
+                             
+                          </div>
+                          <div class="form-group">
+                            <div class="row row-cols-1 row-cols-lg-4">
+                                
+                               <div class="col"> 
+                                <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                 </span>  </a> 
+                               </div>
+                               <div class="col"> 
+                                  <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                  </span>  </a>
+                               </div>
+ 
+                               <div class="col"> 
+                                  <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                  </span>  </a>
+                               </div>
+ 
+                               <div class="col"> 
+                                  <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                  </span>  </a>
+                               </div>
+ 
+                               <div class="col"> 
+                                  <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                  </span>  </a>
+                               </div>
+                               <div class="col"> 
+                                  <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                  </span>  </a>
+                               </div>
+ 
+                               <div class="col"> 
+                                  <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                  </span>  </a> 
+                               </div>
+ 
+                               <div class="col"> 
+                                  <a href="#" class="cm-music"> <span>  Music </span> <span class="csl-n"> <img src="images/closen.svg" alt="close2"/>
+                                  </span>  </a>
+                               </div>
+                               
+                            </div>
+                          </div>
+ 
+                          <div class="form-group">
+
+                           <div class="d-flex align-items-center mul-lable-n">
+                              <div class="form-check comon-all-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-m4" checked>
+                                
+                             </div>
+                             <label class="mb-0">  Main category </label>
+                           </div>
+                             
+ 
+                             <div class="cm-drop-down dy-btn">
+                                 <select class="day-selcet-btn">
+                                    <option value="" data-display-text="Illustration">Illustration</option>
+                                    <option value="apples">One</option>
+                                    <option value="bananas">Two</option>
+                                    <option value="oranges">Four</option>
+                                 </select>
+                             </div>
+                            
+                          </div>
+ 
+ 
+                          <div class="form-group">
+                             <div class="d-flex align-items-center mul-lable-n">
+                              <div class="form-check comon-all-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-m4" checked>
+                                
+                             </div>
+                             <label class="mb-0">  Sub category </label>
+                           </div>
+ 
+                               <div class="cm-drop-down dy-btn">
+                                 <select class="day-selcet-btn">
+                                    <option value="" data-display-text="Music">Music</option>
+                                    <option value="apples">One</option>
+                                    <option value="bananas">Two</option>
+                                    <option value="oranges">Four</option>
+                                 </select>
+                             </div>
+                          </div>
+ 
+                          <div class="form-group">
+                             <label>Style </label>
+                             
+ 
+                               <div class="cm-drop-down dy-btn">
+                                 <select class="day-selcet-btn">
+                                    <option value="" data-display-text="Solid">Solid</option>
+                                    <option value="apples">Bold</option>
+                                    <option value="bananas">Two</option>
+                                    <option value="oranges">Four</option>
+                                 </select>
+                              </div>
+ 
+                          </div>
+ 
+                          <div class="form-group">
+                             <label>Licence </label>
+                             
+ 
+                               <div class="cm-drop-down dy-btn">
+                                 <select class="day-selcet-btn">
+                                    <option value="" data-display-text="Free & Pay">Free & Pay</option>
+                                    <option value="apples">Free</option>
+                                    <option value="bananas">Pay</option>
+                                 </select>
+                               </div>
+ 
+                          </div>
+ 
+                     
+ 
+ 
+                        
+ 
+                          <div class="d-flex spa-stick align-items-center">
+                           <a  class="btn save-btn2 w-100 appy-new-cm" id="save-change-btn2" > Apply changes to
+                            <span class="d-block"> 1,871 files and 1 fields out of 6 </span> 
+                           </a>
+                          
+                          
+                         </div>
+ 
+                      </div>
+                 </div>
+ 
+             </div>
+             <div class="tab-pane fade" id="csvN" role="tabpanel" aria-labelledby="profile-tab">
+               <div class="botom-space-new">
+                  <div class="comon-edit-divsb">
+                     
+                      <div class="form-group">
+
+                      
+                         
+                         <label>  List name </label>
+                    
+                         
+
+                         <div class="cm-drop-down dy-btn">
+                             <select class="day-selcet-btn">
+                                <option value="" data-display-text="3,000 Music icons 11 styles">3,000 Music icons 11 styles</option>
+                                <option value="apples">3,000 Music icons 11 styles</option>
+                                <option value="bananas">1,000 Love icons 11 styles</option>
+                                <option value="oranges">5,000 Computer icons 11 styles</option>
+                                <option value="oranges">7,000 Design icons 10 styles</option>
+                                <option value="oranges">600 Mobile icons 11 styles</option>
+                             </select>
+                         </div>
+                        
+                      </div>
+
+
+                      <div class="form-group">
+                         
+                         
+                         <label> Select action type to load from SVG file </label>
+                       
+
+                           <div class="cm-drop-down dy-btn">
+                             <select class="day-selcet-btn">
+                                <option value="" data-display-text="Replace data"> Replace data </option>
+                                <option value="apples">Add new data</option>
+                                <option value="bananas">Two</option>
+                                <option value="oranges">Four</option>
+                             </select>
+                         </div>
+                      </div>
+
+                      <div class="form-group">
+                          
+                        <div class="form-check comon-all-check">
+                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-ti-1" checked>
+                           <label class="form-check-label me-1" for="flexCheckDefault-ti-1">
+                              Title
+                           </label>
+                        </div>
+
+                      </div>
+
+                      <div class="form-group">
+                          
+                        <div class="form-check comon-all-check">
+                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-ti-2" checked>
+                           <label class="form-check-label me-1" for="flexCheckDefault-ti-2">
+                              Description
+                           </label>
+                        </div>
+
+                      </div>
+
+                      <div class="form-group">
+                          
+                        <div class="form-check comon-all-check">
+                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-ti-3" >
+                           <label class="form-check-label me-1" for="flexCheckDefault-ti-3">
+                              Tags
+                           </label>
+                        </div>
+
+                      </div>
+
+
+                      <div class="form-group">
+                          
+                        <div class="form-check comon-all-check">
+                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-ti-4" >
+                           <label class="form-check-label me-1" for="flexCheckDefault-ti-4">
+                              Main category
+                           </label>
+                        </div>
+
+                      </div>
+
+
+                      <div class="form-group">
+                          
+                        <div class="form-check comon-all-check">
+                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-ti-5" >
+                           <label class="form-check-label me-1" for="flexCheckDefault-ti-5">
+                              Sub category
+                           </label>
+                        </div>
+
+                      </div>
+
+
+                 
+
+
+                    
+
+                      <div class="d-flex spa-stick align-items-center">
+                       <a  class="btn save-btn2 w-100 appy-new-cm" id="save-change-btn2" > Apply changes to
+                        <span class="d-block"> 1,871 files and 1 fields out of 6 </span> 
+                       </a>
+                      
+                      
+                     </div>
+
+                  </div>
+               </div>
+             </div>
+ 
+             <div class="tab-pane fade" id="listN" role="tabpanel" aria-labelledby="profile-tab">
+                 <div id="list-div1">
+                  <div class="search-modal new-secrh-align">
+                     <div class="form-group mb-4 search-div2 d-flex align-items-center form-control">
+                        
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="submit" class="btn "><i class="fas fa-search"></i></button>
+                     </div>
+                     <div class="comon-check-div">
+                       
+                        <div class="drag-div d-flex justify-content-between align-items-center">
+                            <a href="#"> <span>1</span> 3,000 Music icons 11 styles </a>
+                            <div class="drag-btn">
+                              
+                              <div class="dropdown m-dp-new">
+                                 <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/new-h-dots.svg" alt="dots"/>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   <li><a class="dropdown-item" href="#">Rename</a></li>
+                                   <li><a class="dropdown-item" href="#">Delete</a></li>
+                                   
+                                 </ul>
+                               </div>
+                            </div>
+                        </div>
+ 
+                        <div class="drag-div d-flex justify-content-between align-items-center">
+                         <a href="#"> <span>2</span> 1,000 Love icons 11 styles </a>
+                         <div class="drag-btn">
+                           <div class="dropdown m-dp-new">
+                              <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <img src="images/new-h-dots.svg" alt="dots"/>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Rename</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                
+                              </ul>
+                            </div>
+                         </div>
+                       </div>
+ 
+                       <div class="drag-div d-flex justify-content-between align-items-center">
+                         <a href="#"> <span>3</span> 5,000 Computer icons 11 styles</a>
+                         <div class="drag-btn">
+                           <div class="dropdown m-dp-new">
+                              <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <img src="images/new-h-dots.svg" alt="dots"/>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Rename</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                
+                              </ul>
+                            </div>
+                         </div>
+                       </div>
+ 
+ 
+                       <div class="drag-div d-flex justify-content-between align-items-center">
+                         <a href="#"> <span>4</span> 7,000 Design icons 10 styles </a>
+                         <div class="drag-btn">
+                           <div class="dropdown m-dp-new">
+                              <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <img src="images/new-h-dots.svg" alt="dots"/>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Rename</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                
+                              </ul>
+                            </div>
+                         </div>
+                       </div>
+ 
+ 
+                       <div class="drag-div d-flex justify-content-between align-items-center">
+                         <a href="#"> <span>5</span> Free download  </a>
+                         <div class="drag-btn">
+                           <div class="dropdown m-dp-new">
+                              <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <img src="images/new-h-dots.svg" alt="dots"/>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Rename</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                
+                              </ul>
+                            </div>
+                         </div>
+                       </div>
+ 
+ 
+                       <div class="drag-div d-flex justify-content-between align-items-center">
+                         <a href="#"> <span>6</span>600 Mobile icons 11 styles  </a>
+                         <div class="drag-btn">
+                           <div class="dropdown m-dp-new">
+                              <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <img src="images/new-h-dots.svg" alt="dots"/>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Rename</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                
+                              </ul>
+                            </div>
+                         </div>
+                       </div>
+                      
+                      
+          
+                      
+          
+                       
+          
+          
+          
+                     </div>
+          
+          
+                     <div class="d-flex spa-stick align-items-center">
+                        <button class="btn save-btn2 w-100" data-bs-toggle="offcanvas" data-bs-target="#multiupfileModl" aria-controls="offcanvasRight"> Create new list
+                        </button>
+                       
+                       
+                      </div>
+ 
+          
+                    </div>
+                 </div>
+                </div>
+            
+             </div>
+ 
+ 
+             
+         </div>
+       </div>
+
+
+
+       <!-- multiupload div file modal -->
+
+       
+      <div class="offcanvas offcanvas-end user-canvas" tabindex="-1" id="multiupfileModl" aria-labelledby="offcanvasRightLabel">
+         <div class="offcanvas-header">
+           <h5 id="offcanvasRightLabel">Upload new file
+              <span class="d-block"> Uploade the files that you want to edit</span>
+           </h5>
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+               <img src="images/big-close.svg" alt="close"/>
+           </button>
+         </div>
+         <div class="offcanvas-body">
+              
+              <div class="file-upload-div">
+               <h5 class="mt-0"> List name </h5>
+               <div class="form-group mb-4 search-div2 d-flex align-items-center form-control">
+                        
+                  <input type="text" class="form-control" placeholder="Search">
+                  <button type="submit" class="btn "><i class="fas fa-search"></i></button>
+               </div>
+ 
+                 <div class="drop-zone">
+                     <span class="drop-zone__prompt">
+                         <b class="d-block"> Upload SVG files </b>
+                         Drag and drop or click here to<br/> browse files</span>
+                     <input type="file" name="myFile" class="drop-zone__input">
+                 </div>
+ 
+ 
+                 <div class="d-flex spa-stick align-items-center">
+                     <button class="btn save-btn2 w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#sucessdiv" aria-controls="offcanvasRight"> Upload files</button>
+                    
+                    
+                 </div>
+ 
+              </div>
+ 
+ 
+             
+         </div>
+       </div>
+
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+<script src="js/jquery.min.js" ></script>
+<script src="js/custom.js" ></script>
+<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<script>
+    AOS.init({
+      offset: 100,
+      easing: 'ease',
+      delay: 0,
+      once: true,
+      duration: 800,
+    
+    });
+    
+</script>
+
+<script>
+  document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+  const dropZoneElement = inputElement.closest(".drop-zone");
+
+  dropZoneElement.addEventListener("click", (e) => {
+    inputElement.click();
+  });
+
+  inputElement.addEventListener("change", (e) => {
+    if (inputElement.files.length) {
+      updateThumbnail(dropZoneElement, inputElement.files[0]);
+    }
+  });
+
+  dropZoneElement.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropZoneElement.classList.add("drop-zone--over");
+  });
+
+  ["dragleave", "dragend"].forEach((type) => {
+    dropZoneElement.addEventListener(type, (e) => {
+      dropZoneElement.classList.remove("drop-zone--over");
+    });
+  });
+
+  dropZoneElement.addEventListener("drop", (e) => {
+    e.preventDefault();
+
+    if (e.dataTransfer.files.length) {
+      inputElement.files = e.dataTransfer.files;
+      updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+    }
+
+    dropZoneElement.classList.remove("drop-zone--over");
+  });
+});
+
+/**
+ * Updates the thumbnail on a drop zone element.
+ *
+ * @param {HTMLElement} dropZoneElement
+ * @param {File} file
+ */
+function updateThumbnail(dropZoneElement, file) {
+  let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
+
+  // First time - remove the prompt
+  if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+    dropZoneElement.querySelector(".drop-zone__prompt").remove();
+  }
+
+  // First time - there is no thumbnail element, so lets create it
+  if (!thumbnailElement) {
+    thumbnailElement = document.createElement("div");
+    thumbnailElement.classList.add("drop-zone__thumb");
+    dropZoneElement.appendChild(thumbnailElement);
+  }
+
+  thumbnailElement.dataset.label = file.name;
+
+  // Show thumbnail for image files
+  if (file.type.startsWith("image/")) {
+    const reader = new FileReader();
+
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+    };
+  } else {
+    thumbnailElement.style.backgroundImage = null;
+  }
+}
+
+</script>
+
+</body>
+</html>

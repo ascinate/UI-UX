@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blendicons - Faq</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Corben&family=Elsie&family=Encode+Sans+Condensed:wght@400;500;600;700;800&family=Gloria+Hallelujah&family=Inter:wght@100;200;300;400;500;700;800;900&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+   
+
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+	<!--  daterange picker -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
+    
+  </head>
+
+  <body class="login-admin-page">
+  
+    <div class="container-fluid">
+       
+
+          <div class="top-admin">
+			 <div class="d-md-flex justify-content-between">
+                 <a href="index.html"> <img src="images/logo.svg" alt="logo"> </a>
+				 <button type="button" class="btn-close back-home" data-bs-dismiss="modal" aria-label="Close">
+					Go to Home page  <i class="fas fa-angle-right"></i>
+				 </button>
+			 </div>
+		  </div>
+		  <div class="body-admin-sec">
+			<div class="login-modal-admin col-lg-4 mx-auto">
+				<h1 class="text-center mb-2"> Login to Admin </h1>
+				<p class="text-center mb-5 mt-0"> Use your email to continue with Blendicons  </p>
+				<div class="form-group">
+					<label> Email </label>
+					<input type="email" class="form-control" placeholder="tal@adoric.com"/>
+				</div>
+				<div class="form-group">
+				   <label> Password </label>
+				   <div class="d-flex form-control justify-content-between align-items-center">
+					  <input id="password-field col-11" type="password" class="form-control" name="password" value="secret">
+					  <span class="eye-i">
+						 <img src="images/ps-icon.svg"/>
+					  </span>
+				   </div>
+			   </div>
+			   <input type="submit" value="Log in" class="btn login-bn"/>
+			   <p class="text-center mt-4"> By clicking this button, I agree to Blendicons <br/>
+				<a href="#"> Privacy Policy & Terms of Use. </a>  </p>
+
+				<div class="modal-footer border-0 justify-content-center text-center">
+					<p class="copy-text-lo">    Copyright © <a href="#"> 2022 </a>Blendicons. All rights reserve. </p> 
+				</div>
+				
+			</div>
+		  </div>
+
+
+		
+
+    </div>
+ 
+ <script src="js/bootstrap.bundle.min.js" ></script>
+ <script src="js/jquery.min.js" ></script>
+ <script src="js/custom.js" ></script>
+
+
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+ 
+
+
+
+
+<script>
+  $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+	</script>
+ 
+ </body>
+</html>

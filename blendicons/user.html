@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blendicons - Customers</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Corben&family=Elsie&family=Encode+Sans+Condensed:wght@400;500;600;700;800&family=Gloria+Hallelujah&family=Inter:wght@100;200;300;400;500;700;800;900&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+   
+
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+
+   
+   
+    
+  </head>
+
+<body class="all-user-page">
+  
+  <header class="float-start w-100">
+    <div class="top-bar d-flex justify-content-between align-items-center">
+     
+      <nav class="navbar main-nav navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+         <button class="btn d-block d-lg-none tg-btn" type="button" data-bs-toggle="offcanvas" href="#payuser-modal" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+         </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt="logo"/>
+          </a>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+
+               <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="analytics.html">Analytics </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="user.html">Users</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="products.html">Products </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="site.html">Site </a>
+                </li>
+           
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+     
+
+      <div class="right-menu-sec admin-right login-user-menu col-lg-3">
+        <ul class="list-unstyled d-flex m-0 align-items-center justify-content-end">
+           <li class="fb-list-btn">
+              <div class="dropdown favarite-btn">
+                <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="fv-icon"> </span>   <span class="favr-text"> Tal revive  </span> 
+                </button>
+                <ul class="dropdown-menu d-none" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+
+           </li>
+          <li class="d-none">
+            <a href="#"> Login </a>
+          </li>
+          <li>
+            <a href="#" class="user-icon-btn border-0"> 
+               <figure class="mb-0">
+                   <img src="images/usericon.svg" alt="user-icon"/>
+               </figure>    
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </header>  
+
+<div id="all-user">
+      <div class="banner-part listing-banner float-start search-banner w-100" >
+         <div class="container p-0">
+            <div class="content-section mx-auto ">
+               <h1 class="mb-0 mt-0">Users   </h1>
+               <h6 class="mb-3" > Showing <b> 7,876 (10.45%) </b> out of 8,098 users </h6>
+               <div class="mt-2" >
+                     <div class="user-filter d-flex align-items-center">
+                        <div class="from-sec ">
+                           <div class="d-flex align-items-center">
+                              
+                                 <div class="form-group d-flex align-items-center">
+                                    <button class="btn srch-btn">
+                                       <img src="images/search-icn.svg"/>
+                                    </button>
+                                    <input type="text" class="form-control" placeholder="Music"/>
+                                    
+                                 </div>
+                                 
+                              
+                              
+                           </div>
+                        </div>
+                        <div class="group-button1">
+                           <button type="button" class="btn colom-btn" data-bs-toggle="offcanvas" data-bs-target="#userfilternewadd" aria-controls="offcanvasRight">
+                              Columns
+                           </button>
+                           <button type="button" class="btn filter-btn" data-bs-toggle="offcanvas" data-bs-target="#userfilter" aria-controls="offcanvasRight">
+                           <span> 5 </span> Filters
+                           </button>
+                           <div class="d-block d-sm-none">
+                              
+
+                              <div class="dropdown comon-dots-2 ms-2 mt-2">
+                                 <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/dots-icons.svg"/>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   <li><a class="dropdown-item" href="#">Columns</a></li>
+                                   <li><a class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#userfilter" aria-controls="offcanvasRight">
+                                    <span> 5 </span> Filters</a></li>
+                                  
+                                 </ul>
+                               </div>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <section class="total-body pt-4 search-body float-start w-100">
+      
+         
+            <div class="filter-with-tabs-section">
+                  <div class="container p-0">
+                     <ul class="nav nav-tabs align-items-center mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">All users</button>
+                        
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab2" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Free</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-profile-tab2" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                           type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pay</button>
+                        </li>
+                        
+                     </ul>
+                     <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                           <div class="user-icon-list-div">
+                              <table class="table">
+                                 <thead>
+                                 <tr>
+                                    <th scope="col" class="ps-lg-0">Name</th>
+                                    <th scope="col">Download</th>
+                                    <th scope="col">Sign up date</th>
+                                    <th scope="col" data-type="string" class="cr-pointer">Status <i class="fas fa-arrow-up"></i></th>
+                                    <th scope="col" data-type="number" class="cr-pointer">Last visit <i class="fas fa-arrow-down"></i></th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col"></th>
+                                 </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                    <td class="ps-lg-0"> <a id="user-details-button" class="cm-btn-user"> Tal revivo <span class="admin-text"> Admin</span> 
+                                    </a> </td>
+                                    <td>1,000</td>
+                                    <td>24 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">20 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                      
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="ps-lg-0">David choen</td>
+                                    <td>7,816</td>
+                                    <td>24 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">30 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 </tr>
+                                 <tr>
+                                    <td class="ps-lg-0">Jason bow <span class="pay-text"> pay</span> </td>
+                                    <td>7,816</td>
+                                    <td>25 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">10 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="ps-lg-0">David choen <span class="pay-text confirm"> pay</span></td>
+                                    <td>7,816</td>
+                                    <td>24 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">30 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 </tr>
+                                 <tr>
+                                    <td class="ps-lg-0">David choen</td>
+                                    <td>7,816</td>
+                                    <td>24 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">30 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 </tr>
+
+                                 <tr>
+                                    <td class="ps-lg-0">David choen</td>
+                                    <td>7,816</td>
+                                    <td>24 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">30 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 </tr>
+
+                                 <tr>
+                                    <td class="ps-lg-0">David choen</td>
+                                    <td>7,816</td>
+                                    <td>24 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">30 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 </tr>
+
+                                 <tr>
+                                    <td class="ps-lg-0">David choen</td>
+                                    <td>7,816</td>
+                                    <td>24 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">30 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 </tr>
+                                 <tr>
+                                    <td class="ps-lg-0">David choen</td>
+                                    <td>7,816</td>
+                                    <td>24 Feb 2022</td>
+                                    <td>Active</td>
+                                    <td  class="score">30 Mar 2022</td>
+                                    <td>tal@adoric.com</td>
+                                    <td>
+                                       <div class="dropdown comon-dots">
+                                          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                             <img src="images/dots-icons.svg" alt="dots"/>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">View user</a></li>
+                                            <li><a class="dropdown-item" href="#">Block user</a></li>
+                                          </ul>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 </tr>
+                                 </tbody>
+                              </table>
+
+                           </div>
+
+                           <div class="next-buuton-div d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                 <div class="left-page-number order-3 order-lg-1 d-flex align-items-center">
+                                    Users per page
+                                   
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="23">23</option>
+                                          <option value="apples">23</option>
+                                          <option value="bananas">23</option>
+                                          <option value="oranges">23</option>
+                                       </select>
+                                    </div>
+                                 </div>
+
+                                 <button type="text" class="btn new-btn order-1  order-lg-2"> Next page <span>
+                                    <img src="images/next-arrow.png" alt="nx"/>
+                                 </span> </button>
+                                 <div class="right-arrow-btn d-flex align-items-center order-2 my-4 my-lg-0 order-lg-3">
+                                    <input type="text" class="form-control num-box" placeholder="23" />
+                                    <div class="arrow-buuton-div">
+                                       <span>of 1,761 </span>
+                                       <button type="button" class="btn cm-arrow-2">
+                                          <i class="fas fa-angle-left"></i>
+                                       </button>
+                                       <button type="button" class="btn ms-2 cm-arrow-2">
+                                          <i class="fas fa-angle-right"></i>
+                                       </button>
+                                    </div>
+                                 </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <p></p>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+      
+
+      
+      
+
+
+      
+      
+      </section>
+</div>
+<div id="user-details-div2">
+         <div class="banner-part float-start w-100 fav-banner" >
+            <div class="container p-0">
+               <a id="back-btn" class="btn back-button ps-0"> <i class="fas fa-angle-left"></i> back </a>
+               <div class="content-section mx-auto ">
+                  <div class="justify-content-between align-items-center d-flex ">
+                     <div class="top-conent-section float-start order-2 order-lg-1">
+                        <h1 class="mb-0 d-flex align-items-center">Tal Revivo <span class="pay-btn-span"> Pay </span> </h1>
+                        <h6 class="mb-2 mt-2 " >revivo81@gmail.com l Status: Active
+                           <span class="online"></span>
+                            </h6>
+                        <p class="mb-0 time-hr">Last seen: 16Hrs ago</p>
+                     </div>
+                     <figure class="float-end mb-0 order-1 order-lg-2 mobile-img2">
+
+                        <img src="images/icons/userimg.svg" class="d-none d-sm-block" alt="img">
+                        <img src="images/small-icons1.svg" class="d-block d-sm-none" alt="img">
+                        
+                     </figure>
+                     
+                  </div>
+                  
+                  
+               </div>
+            </div>
+         </div>
+
+
+         <section class="total-body pt-3 pt-lg-5 float-start w-100">
+    
+            <div class="container p-0">
+               <div class="row gx-lg-5 row-cols-1 row-cols-lg-2">
+                     <div class="col">
+                        <div class="user-comon-details">
+                           <h5> Customer profile </h5>
+                           <ul class="list-unstyled">
+                              <li> <span>  First name </span> Tal </li>
+                              <li> <span>  Last name </span> Revivo </li>
+                              <li> <span>  Email </span> revivo81@gmail.com</li>
+                              <li> <span> Country</span> Israel</li>
+                              <li> <span>  Login by </span> Facebook</li>
+                              <li> <span>  Date sign up </span>12 Mar 2022 </li>
+                              <li> <span>  Last seen </span> 18 Mar 2022</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <div class="col d-lg-flex justify-content-lg-end">
+                        <div class="user-comon-details">
+                           <h5> Customer revenue </h5>
+                           <ul class="list-unstyled">
+                              <li> <span> Plan type </span> Pro monthly </li>
+                              <li> <span> Plan name </span> Free #3 </li>
+                              <li> <span> Paying status </span> Paying</li>
+                              <li> <span> Date purchase</span> 18 Mar 2022</li>
+                              <li> <span> Time in contract (Months) </span> 3</li>
+                              <li> <span> MRR </span>$9.99 </li>
+                              <li> <span> ARR </span> $119.88</li>
+                              <li> <span> LTV </span> $29.97</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <div class="col">
+                        <div class="user-comon-details">
+                           <h5> Customer product activity </h5>
+                           <ul class="list-unstyled">
+                              <li> <span>  Add to Favorites </span> Yes </li>
+                              <li> <span>  Create folders </span> No </li>
+                              <li> <span>  Change color</span> No</li>
+                              <li> <span> Used multi download</span> Yes</li>
+                              <li class="mt-5"> <span>  Total download </span> 10,000</li>
+                              <li> <span> Icons download </span>8,000 (80%)</li>
+                              <li> <span>  Illustrations download </span> 1,500 (15%)</li>
+                              <li> <span>  Elements download </span> 500 (5%)</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <div class="col d-lg-flex justify-content-lg-end">
+                        <div class="user-comon-details">
+                           <h5> Actions </h5>
+                           <ul class="list-unstyled">
+                              <li> <span> Reset password </span>  <a href="#"> Click to reset <i class="fas fa-angle-right"></i></a> </li>
+                              <li> <span> Block account </span>  <a href="#"> No <i class="fas fa-angle-down"></i></a></li>
+                              <li> <span> User type </span>  <a href="#"> Administrator <i class="fas fa-angle-down"></i></a> </li>
+                           </ul>
+                        </div>
+                     </div>
+
+
+               </div>
+            </div>
+             
+         
+         
+             
+             
+          </section>
+</div>
+
+
+<div class="offcanvas offcanvas-start modal-menu-pyu" tabindex="-1" id="payuser-modal" aria-labelledby="offcanvasExampleLabel">
+   <div class="offcanvas-header">
+      <div class="d-flex w-100 justify-content-between align-items-center">
+         <button type="button" class="btn-close text-reset sp-close" data-bs-dismiss="offcanvas" aria-label="Close">
+             <img src="images/icons/small-icons-close.svg" alt="sm"/>
+         </button>
+         <a href="#">
+            <img src="images/logo.svg" alt="logo"/>
+         </a>
+         <a href="#">
+            <img src="images/icons/small-user-icon.svg" alt="logo"/>
+         </a>
+      </div>
+     
+     
+   </div>
+   <div class="offcanvas-body">
+      <div class="pvc-mobile-div">
+         <div class="form-group form-control d-flex align-items-center">
+            <span class="me-3">
+               <i class="fas fa-search"></i>
+            </span>
+            <input type="text" class="sp-form-sec" placeholder="Search"/>
+         </div>
+         
+         <ul class="list-unstyled main-link mt-3">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li><a class="dropdown-item" href="#">Icons</a></li>
+                 <li><a class="dropdown-item" href="#">Illustrations</a></li>
+                 <li><a class="dropdown-item" href="#">Elements</a></li>
+                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+               </ul>
+             </li>
+             <li>
+                <a href="#"> FAQ </a>
+             </li>
+             <li>
+               <a href="#"> Support </a>
+             </li>
+             <li>
+               <a href="#"> Sign out </a>
+             </li>
+         </ul>
+
+            <div class="mob-bot-div">
+               <ul class="list-unstyled socal-link d-flex align-items-center justify-content-center">
+                  <li>
+                     <a href="#"> <i class="fab fa-twitter"></i> </a>
+                     <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                     <a href="#"> <i class="fab fa-pinterest-p"></i> </a>
+                     <a href="#"> <i class="fab fa-twitter"></i> </a>
+                  </li>
+               </ul>
+               <hr/>
+               <p> Copyright © 2022 Blendicons. All rights reserve.</p>
+            </div>
+      </div>
+   </div>
+ </div>
+
+
+
+ <div class="offcanvas offcanvas-end user-canvas" tabindex="-1" id="userfilter" aria-labelledby="offcanvasRightLabel">
+   <div class="offcanvas-header">
+     <h5 id="offcanvasRightLabel">Columns filters
+        <span class="d-block"> Selected <b> 5 </b> out of <b> 34 </b> columns </span>
+     </h5>
+     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+         <img src="images/big-close.svg" alt="close"/>
+     </button>
+   </div>
+   <div class="offcanvas-body">
+       <div class="search-modal">
+           <div class="form-group mb-3 search-div2 d-flex align-items-center form-control">
+              
+              <input type="text" class="form-control" placeholder="Search"/>
+              <button type="submit" class="btn "><i class="fas fa-search"></i></button>
+           </div>
+           <div class="comon-check-div">
+              <h5> Customer profile </h5>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">
+                  First name
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">
+                 Last name
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">
+                  Email
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">
+                  Country
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">
+                  Login by
+               </label>
+             </div>
+
+
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">
+                  Date sign up
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">
+                  Last seen
+               </label>
+             </div>
+
+
+           </div>
+
+           <div class="comon-check-div mt-5">
+            <h5> Customer revenue </h5>
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+             <label class="form-check-label" for="flexCheckDefault">
+               Plan type
+             </label>
+           </div>
+
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+             <label class="form-check-label" for="flexCheckDefault">
+               Plan name
+             </label>
+           </div>
+
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+             <label class="form-check-label" for="flexCheckDefault">
+               Paying status
+             </label>
+           </div>
+
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+             <label class="form-check-label" for="flexCheckDefault">
+               Date purchase
+             </label>
+           </div>
+
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+             <label class="form-check-label" for="flexCheckDefault">
+               Time in contract (Months)
+             </label>
+           </div>
+
+
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+             <label class="form-check-label" for="flexCheckDefault">
+               MRR
+             </label>
+           </div>
+
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+             <label class="form-check-label" for="flexCheckDefault">
+               ARR
+             </label>
+           </div>
+
+
+           </div>
+
+           <div class="d-flex align-items-center bottom-buttons">
+               <input type="button" class="btn save-btn2" value="Save as default view">
+               <input type="button" class="btn rest-btn2 ms-3" value="Reset">
+           </div>
+
+       </div>
+   </div>
+ </div>
+
+
+ <!-- new add 04-07 -->
+
+ <div class="offcanvas offcanvas-end user-canvas" tabindex="-1" id="userfilternewadd" aria-labelledby="offcanvasRightLabel">
+   <div class="offcanvas-header">
+     <h5 id="offcanvasRightLabel">Filters
+        <span class="d-block"> <b> Sign up date </b>  </span>
+     </h5>
+     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+         <img src="images/big-close.svg" alt="close"/>
+     </button>
+   </div>
+   <div class="offcanvas-body">
+       <div class="search-modal">
+           
+           <div class="comon-check-div radio-box">
+              <h5> Customer profile </h5>
+
+              <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefaultnew" id="is">
+               <label class="form-check-label" for="is">
+                Is
+               </label>
+             </div>
+
+             <div id="is-div">
+               <div class="cm-drop-down dy-btn">
+                  <select class="day-selcet-btn">
+                     <option value="" data-display-text="Today">Today</option>
+                     <option value="apples">One</option>
+                     <option value="bananas">Two</option>
+                     <option value="oranges">Four</option>
+                  </select>
+                </div>
+             </div>
+             
+
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefaultnew" id="equal">
+               <label class="form-check-label" for="equal">
+                  Is equal to
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefaultnew" id="before">
+               <label class="form-check-label" for="before">
+                  Is before
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefaultnew" id="aftern">
+               <label class="form-check-label" for="aftern">
+                  Is after
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefaultnew" id="betweenn">
+               <label class="form-check-label" for="betweenn">
+                  Is between
+               </label>
+             </div>
+
+             <div id="is-between-div" class="mb-3">
+               <div class="input-group date" id="datepicker3">
+                  <span class="input-group-append">
+                     <span class="input-group-text bg-light d-block">
+                       <i class="fa fa-calendar"></i>
+                     </span>
+                   </span>
+                  <input type="text" class="form-control" id="date" value="MM/DD/YYYY"/>
+                  
+                </div>
+               <span class="d-block">and</span>
+               <div class="input-group date" id="datepicker4">
+                  <span class="input-group-append">
+                     <span class="input-group-text bg-light d-block">
+                       <i class="fa fa-calendar"></i>
+                     </span>
+                   </span>
+                  <input type="text" class="form-control" id="date" value="MM/DD/YYYY"/>
+                  
+                </div>
+             </div>
+
+
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefaultnew" id="known">
+               <label class="form-check-label" for="known">
+                  Is known
+               </label>
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefaultnew" id="unknown">
+               <label class="form-check-label" for="unknown">
+                  Is Unknown
+               </label>
+             </div>
+
+             
+
+
+           </div>
+
+          
+
+           <div class="d-flex align-items-center bottom-buttons">
+               <input type="button" class="btn save-btn2 w-100" value="Apply filter">
+             
+           </div>
+
+       </div>
+   </div>
+ </div>
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+<script src="js/jquery.min.js" ></script>
+<script src="js/custom.js" ></script>
+<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script>
+    AOS.init({
+      offset: 100,
+      easing: 'ease',
+      delay: 0,
+      once: true,
+      duration: 800,
+    
+    });
+    
+</script>
+
+</body>
+</html>

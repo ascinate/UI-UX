@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blendicons - Analytics</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Corben&family=Elsie&family=Encode+Sans+Condensed:wght@400;500;600;700;800&family=Gloria+Hallelujah&family=Inter:wght@100;200;300;400;500;700;800;900&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+ 
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
+  </head>
+
+<body class="analytics-page">
+  
+  <header class="float-start w-100">
+    <div class="top-bar d-flex justify-content-between align-items-center">
+     
+      <nav class="navbar main-nav navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+         <button class="btn d-block d-lg-none tg-btn" type="button" data-bs-toggle="offcanvas" href="#payuser-modal" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+         </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt="logo"/>
+          </a>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="analytics.html">Analytics </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="user.html">Users</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="products.html">Products </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="site.html">Site </a>
+                </li>
+           
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+     
+
+      <div class="right-menu-sec admin-right login-user-menu col-lg-3">
+        <ul class="list-unstyled d-flex m-0 align-items-center justify-content-end">
+           <li class="fb-list-btn">
+              <div class="dropdown favarite-btn">
+                <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                 <span class="fv-icon"> </span>   <span class="favr-text"> Tal revive  </span> 
+                </button>
+                <ul class="dropdown-menu d-none" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+
+           </li>
+          <li class="d-none">
+            <a href="#"> Login </a>
+          </li>
+          <li>
+            <a href="#" class="user-icon-btn border-0"> 
+               <figure class="mb-0">
+                   <img src="images/usericon.svg" alt="user-icon"/>
+               </figure>    
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </header>  
+
+<div class="tab-container">
+   <div class="banner-part listing-banner analytics-page-banner  float-start search-banner w-100" >
+         <div class="container ">
+            <div class="content-section mx-auto ">
+                  
+               <div class="row">
+   
+                  <div class="col-lg-12 px-0">
+                    
+
+                     <div class="d-sm-flex align-items-center justify-content-between">
+                           <div class="dropdown admin-dashbord-dp">
+                              <button id="dLabelan" class="dropdown-select ps-lg-0 btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <span class="cl-text"> Upload </span> 
+                                 <span class="caret d-none d-lg-block"></span>
+                              </button>
+                              <ul class="dropdown-menu analytic-sel radio shadow border-0" aria-labelledby="dLabelan">
+                                 <li>
+                                 <label class="dropdown-item" id="upload-select">
+                                    <input class="jRadioDropdown" type="radio" value="16" name="alphabetup">
+                                    Upload
+                                    </label>
+                                 </li>
+                                 <li>
+                                 <label class="dropdown-item" id="download-select">
+                                    <input class="jRadioDropdown" type="radio" value="17" name="alphabetup">
+                                   Download
+                                    </label>
+                                 </li>
+                                 <li>
+                                 <label class="dropdown-item" id="customers-select">
+                                    <input class="jRadioDropdown" type="radio" value="18" name="alphabetup">
+                                    Customers
+                                    </label>
+                                 </li>
+                                 <li>
+                                 <label class="dropdown-item" id="revenue-select">
+                                    <input class="jRadioDropdown" type="radio" value="19" name="alphabetup">
+                                    Revenue
+                                    </label>
+                                 </li>
+                                 <li>
+                                
+                                 
+                              </ul>
+                           </div>
+                           <div class="d-flex  justify-content-start justify-content-lg-end comon-abnner-select">
+                                
+                              
+
+                               <div class="cm-drop-down dy-btn d-none d-lg-block">
+                                 <select class="day-selcet-btn">
+                                    <option value="" data-display-text="Day">Day</option>
+                                    <option value="apples">One</option>
+                                    <option value="bananas">Two</option>
+                                    <option value="oranges">Four</option>
+                                 </select>
+                               </div>
+
+                               <button class="btn d-none d-lg-block compair-btn">Compere dates </button>
+
+                               <div class="dropdown comon-tabs-dots d-none d-sm-block d-md-block d-lg-none">
+                                 <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <figure class="m-0">
+                                       <img src="images/mobile-icon-dots.png" alt="dis"/>
+                                     </figure>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   
+                                   <li>
+
+                                    <button class="btn compair-btn">Compere dates </button>
+                                   </li>
+                                   
+                                 </ul>
+                               </div>
+
+
+                               <button class="btn calender-btn"> <i class="far fa-calendar"></i> Last 7 days 
+                              
+                                 <input type="text" name="date7" value="01/01/2015 - 01/31/2015">
+
+                              </button>
+
+                           </div>
+                     </div>
+
+                  </div>
+
+               </div>
+                  
+                  
+               
+            
+            </div>
+         </div>
+   </div>
+   
+   <section class="total-body analytics-page-div pt-3 pt-lg-4 search-body float-start w-100">
+      
+      
+
+         <div id="upload-div">
+            <div class="filter-with-tabs-section">
+                  <div class="container p-0">
+                     <ul class="nav nav-tabs align-items-center mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link active"  data-bs-toggle="pill" data-bs-target="#upload-tab1"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Individual</button>
+                        
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#upload-tab2" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Categories</button>
+                        </li>
+                        
+                     
+                     </ul>
+                     <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="upload-tab1" role="tabpanel" aria-labelledby="pills-home-tab">
+                           <div class="individual-div">
+                              <div class="top-sec-div d-lg-flex justify-content-between">
+                                    <div class="left-content">
+                                       <h6> Total individual upload </h6>
+                                       <h2> 341,871 <span> <b> (10.01%) </b>  out of <b> 871,871 </b> files </span></h2>
+                                       <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                    </div>
+
+                                    <div class="right-select-option d-flex align-items-center">
+                                       
+
+                                        
+                                       <div class="cm-drop-down all-syle">
+                                          <select class="day-selcet-btn">
+                                             <option value="" data-display-text="All styles">All styles</option>
+                                             <option value="apples">One</option>
+                                             <option value="bananas">Two</option>
+                                             <option value="oranges">Oranges</option>
+                                          </select>
+                                       </div>
+
+
+                                       <div class="cm-drop-down illustrations-selcet-btn">
+                                          <select class="day-selcet-btn">
+                                             <option value="" data-display-text="Illustrations">Illustrations</option>
+                                             <option value="apples">One</option>
+                                             <option value="bananas">Two</option>
+                                             <option value="oranges">Oranges</option>
+                                          </select>
+                                       </div>
+
+                                      
+
+                                    </div>
+
+                              </div>
+
+                              <figure class="w-100 mx-auto graphi-img">
+                                <img src="images/graph-div.svg" alt="grph"/>
+
+                              </figure>
+
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="upload-tab2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                           <div class="individual-div">
+                              <div class="top-sec-div d-lg-flex justify-content-between">
+                                    <div class="left-content">
+                                       <h6> Total categories upload </h6>
+                                       <h2> 341,871 <span> <b> (10.01%) </b>  out of <b> 871,871 </b> files </span></h2>
+                                       <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                    </div>
+
+                                    <div class="right-select-option d-flex align-items-center">
+                                       
+                                       <div class="cm-drop-down ">
+                                          <select class="day-selcet-btn">
+                                             <option value="" data-display-text="All styles">All styles</option>
+                                             <option value="apples">One</option>
+                                             <option value="bananas">Two</option>
+                                             <option value="oranges">Oranges</option>
+                                          </select>
+                                       </div>
+
+
+                                       <div class="cm-drop-down illustrations-selcet-btn">
+                                          <select class="day-selcet-btn">
+                                             <option value="" data-display-text="Illustrations">Illustrations</option>
+                                             <option value="apples">One</option>
+                                             <option value="bananas">Two</option>
+                                             <option value="oranges">Oranges</option>
+                                          </select>
+                                       </div>
+
+                                    </div>
+
+                              </div>
+
+                              <figure class="w-100 mx-auto graphi-img">
+                                <img src="images/category-graph.svg" alt="grph"/>
+
+                              </figure>
+
+                           </div>
+                        </div>
+                     </div>
+
+
+                     
+                  </div>
+            </div>
+         </div>
+         
+         <div id="coustomer-div">
+            <div class="filter-with-tabs-section">
+               <div class="container p-0">
+                  <ul class="nav nav-tabs align-items-center mb-3" id="pills-tab" role="tablist">
+                     <li class="nav-item" role="presentation">
+                     <button class="nav-link active"  data-bs-toggle="pill" data-bs-target="#coustomer-tab1"
+                     type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sign ups</button>
+                     
+                     </li>
+                     <li class="nav-item" role="presentation">
+                     <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#coustomer-tab2" 
+                     type="button" role="tab" aria-controls="pills-profile" aria-selected="false">New customers</button>
+                     </li>
+
+                     <li class="nav-item d-none d-md-block" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#coustomer-tab3" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Active customers</button>
+                     </li>
+
+                     <li class="nav-item d-none d-md-block" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#coustomer-tab4" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Churned customers</button>
+                     </li>
+
+                     <li class="nav-item d-none d-md-block" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#coustomer-tab5" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Downgrades</button>
+                     </li>
+
+                     <li class="nav-item d-none d-md-block" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#coustomer-tab6" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Upgrades</button>
+                     </li>
+
+
+                     <div class="dropdown comon-tabs-dots d-block d-lg-none">
+                        <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <figure class="m-0">
+                              <img src="images/mobile-icon-dots.png" alt="sb"/>
+                          </figure>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li>
+                             <a class="dropdown-item" data-bs-toggle="pill" data-bs-target="#coustomer-tab3" 
+                             role="tab" aria-controls="pills-profile" aria-selected="false">
+                             Active customers
+                          </a></li>
+                          <li><a class="dropdown-item" data-bs-toggle="pill" data-bs-target="#coustomer-tab4" 
+                           role="tab" aria-controls="pills-profile" aria-selected="false">Churned customers</a></li>
+                          <li><a class="dropdown-item"data-bs-toggle="pill" data-bs-target="#coustomer-tab5" 
+                           role="tab" aria-controls="pills-profile" aria-selected="false">Downgrades</a></li>
+                        
+                           <li><a class="dropdown-item"data-bs-toggle="pill" data-bs-target="#coustomer-tab6" 
+                              role="tab" aria-controls="pills-profile" aria-selected="false">Upgrades</a></li>
+                        </ul>
+                      </div>
+                     
+                  
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                     <div class="tab-pane fade show active" id="coustomer-tab1" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Sign ups </h6>
+                                    <h2>541,816 <span><b> (10.01%) </b>out of <b> 981,871 </b> sign ups </span></h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-md-flex align-items-center">
+
+
+                                    
+                                    
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Sign up by mobile">Sign up by mobile</option>
+                                          <option value="apples">Sign up by mobile</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+                                    <div class="cm-drop-down cm-margin-l mt-3 mt-lg-0">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Sign up by apple ID">Sign up by apple ID</option>
+                                          <option value="apples">Sign up by mobile</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+                                    
+
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="coustomer-tab2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> New customers </h6>
+                                    <h2>12 </h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+
+
+                                     <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Sign up by mobile</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+
+                                  
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="coustomer-tab3" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Active customers </h6>
+                                    <h2> 187 <span> <b> (10.01%) </b> out of <b> 1,781 </b>  customers </span></h2>
+                                    <h5> <span class="counting-text red-down"><img src="images/down-arrow.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+                                    
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Yearly plan">Yearly plan</option>
+                                          <option value="apples">Yearly plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+                                    
+
+
+                                  
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+
+                     <div class="tab-pane fade" id="coustomer-tab4" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Churned customers </h6>
+                                    <h2> 3 </h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+                                    
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+                                     
+
+
+                                  
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+
+                     <div class="tab-pane fade" id="coustomer-tab5" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Downgrades </h6>
+                                    <h2> 3 </h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+                                    
+
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+
+                                  
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+
+                     <div class="tab-pane fade" id="coustomer-tab6" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Upgrades </h6>
+                                    <h2> 3 </h2>
+                                    <h5> <span class="counting-text "><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+                                    
+
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+
+                                  
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+                  </div>
+
+
+                  
+               </div>
+            </div>
+         </div>
+
+         <div id="revenue-div">
+            <div class="filter-with-tabs-section">
+               <div class="container p-0">
+                  <ul class="nav nav-tabs align-items-center mb-3" id="pills-tab" role="tablist">
+                     <li class="nav-item" role="presentation">
+                     <button class="nav-link active"  data-bs-toggle="pill" data-bs-target="#revenue-tab1"
+                     type="button" role="tab" aria-controls="pills-home" aria-selected="true">MRR</button>
+                     
+                     </li>
+                     <li class="nav-item" role="presentation">
+                     <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#revenue-tab2" 
+                     type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ARR</button>
+                     </li>
+
+                     <li class="nav-item d-none d-lg-block" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#revenue-tab3" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Net revenue</button>
+                     </li>
+
+
+
+                     
+
+
+                     <li class="nav-item  d-none d-lg-block" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#revenue-tab4" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">AOV</button>
+                     </li>
+
+                     <div class="dropdown comon-tabs-dots  d-block d-lg-none">
+                        <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <figure class="m-0">
+                              <img src="images/mobile-icon-dots.png" alt="dis"/>
+                            </figure>
+                           
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                           <li ><a class="dropdown-item"  data-bs-toggle="pill" data-bs-target="#revenue-tab3" 
+                              role="tab" aria-controls="pills-profile" aria-selected="false">
+                              Net revenue
+  
+                            </a></li>
+
+                           <li ><a class="dropdown-item" data-bs-toggle="pill" data-bs-target="#revenue-tab4"
+                              role="tab" aria-controls="pills-profile" aria-selected="false">
+                              AOV
+  
+                            </a></li>
+
+                          <li><a class="dropdown-item" data-bs-toggle="pill" data-bs-target="#revenue-tab5"
+                            role="tab" aria-controls="pills-profile" aria-selected="false">
+                           LTV
+
+                          </a></li>
+                          <li><a class="dropdown-item"   data-bs-toggle="pill" data-bs-target="#revenue-tab6" 
+                           type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ARPU</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+
+                     <li class="nav-item d-none d-lg-block" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#revenue-tab5" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">LTV</button>
+                     </li>
+
+                     <li class="nav-item  d-none d-lg-block" role="presentation">
+                        <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#revenue-tab6" 
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ARPU</button>
+                     </li>
+                     
+                  
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                     <div class="tab-pane fade show active" id="revenue-tab1" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Monthly recurring revenue </h6>
+                                    <h2> $12,871 <span> From<b> 236 (100%) </b> pay customers </h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="revenue-tab2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Annual run rate</h6>
+                                    <h2> $129,871 <span> From<b> (100%) </b> pay customers </h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="revenue-tab3" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Net revenue</h6>
+                                    <h2> $129,871 <span> From<b>100 (100%) </b> pay customers </h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+
+                     <div class="tab-pane fade" id="revenue-tab4" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Average order value</h6>
+                                    <h2>$23.98 <span> From<b> (100%) </b> pay customers </h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+
+                     <div class="tab-pane fade" id="revenue-tab5" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6> Lifetime value</h6>
+                                    <h2>$87.98 <span> From <b>  71 (23.87%) </b> pay customers</h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+
+                     <div class="tab-pane fade" id="revenue-tab6" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="individual-div">
+                           <div class="top-sec-div d-lg-flex justify-content-between">
+                                 <div class="left-content">
+                                    <h6>Average revenue per user</h6>
+                                    <h2>$47.65  </h2>
+                                    <h5> <span class="counting-text"><img src="images/up-icon.svg" alt="up"/>  91.09% </span> in selected period </h5>
+                                 </div>
+
+                                 <div class="right-select-option d-flex align-items-center">
+
+
+
+                                    <div class="cm-drop-down cm-margin-l">
+                                       <select class="day-selcet-btn">
+                                          <option value="" data-display-text="Any plan">Any plan</option>
+                                          <option value="apples">Any plan</option>
+                                          <option value="bananas">Two</option>
+                                          <option value="oranges">Oranges</option>
+                                       </select>
+                                    </div>
+
+
+                                 </div>
+
+                           </div>
+
+                           <figure class="w-100 mx-auto graphi-img">
+                             <img src="images/graph-div.svg" alt="grph"/>
+
+                           </figure>
+
+                        </div>
+                     </div>
+                  </div>
+
+
+                  
+               </div>
+            </div>
+         </div>
+      
+
+
+      
+      
+   </section>
+
+</div>
+
+   <div class="offcanvas offcanvas-start modal-menu-pyu" tabindex="-1" id="payuser-modal" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+         <div class="d-flex w-100 justify-content-between align-items-center">
+            <button type="button" class="btn-close text-reset sp-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="images/icons/small-icons-close.svg" alt="sm"/>
+            </button>
+            <a href="#">
+               <img src="images/logo.svg" alt="logo"/>
+            </a>
+            <a href="#">
+               <img src="images/icons/small-user-icon.svg" alt="logo"/>
+            </a>
+         </div>
+        
+        
+      </div>
+      <div class="offcanvas-body">
+         <div class="pvc-mobile-div">
+            <div class="form-group form-control d-flex align-items-center">
+               <span class="me-3">
+                  <i class="fas fa-search"></i>
+               </span>
+               <input type="text" class="sp-form-sec" placeholder="Search"/>
+            </div>
+            
+            <ul class="list-unstyled main-link mt-3">
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Explore
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Icons</a></li>
+                    <li><a class="dropdown-item" href="#">Illustrations</a></li>
+                    <li><a class="dropdown-item" href="#">Elements</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li>
+                   <a href="#"> FAQ </a>
+                </li>
+                <li>
+                  <a href="#"> Support </a>
+                </li>
+                <li>
+                  <a href="#"> Sign out </a>
+                </li>
+            </ul>
+   
+               <div class="mob-bot-div">
+                  <ul class="list-unstyled socal-link d-flex align-items-center justify-content-center">
+                     <li>
+                        <a href="#"> <i class="fab fa-twitter"></i> </a>
+                        <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                        <a href="#"> <i class="fab fa-pinterest-p"></i> </a>
+                        <a href="#"> <i class="fab fa-twitter"></i> </a>
+                     </li>
+                  </ul>
+                  <hr/>
+                  <p> Copyright © 2022 Blendicons. All rights reserve.</p>
+               </div>
+         </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade login-modal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title mt-0" id="exampleModalLabel">
+               <img src="images/logo.svg" alt="logo">
+            </h5>
+            <button type="button" class="btn-close back-home" data-bs-dismiss="modal" aria-label="Close">
+               Go to Home page  <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="login-modal-admin col-lg-4 mx-auto">
+                  <h1 class="text-center mb-2"> Login to Admin </h1>
+                  <p class="text-center mb-5 mt-0"> Use your email to continue with Blendicons  </p>
+                  <div class="form-group">
+                      <label> Email </label>
+                      <input type="email" class="form-control" placeholder="tal@adoric.com"/>
+                  </div>
+                  <div class="form-group">
+                     <label> Password </label>
+                     <div class="d-flex form-control justify-content-between align-items-center">
+                        <input id="password-field col-11" type="password" class="" name="password" value="secret">
+                        <span class="eye-i">
+                           <img src="images/ps-icon.svg"/>
+                        </span>
+                     </div>
+                 </div>
+                 <input type="submit" value="Log in" class="btn login-bn"/>
+                 <p class="text-center mt-4"> By clicking this button, I agree to Blendicons <br/>
+                  <a href="#"> Privacy Policy & Terms of Use. </a>  </p>
+
+                  <div class="modal-footer border-0 justify-content-center text-center">
+                      <p class="copy-text-lo">    Copyright © <a href="#"> 2022 </a>Blendicons. All rights reserve. </p> 
+                  </div>
+                  
+              </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+<script src="js/jquery.min.js" ></script>
+<script src="js/custom.js" ></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+<script>
+   $(function() {
+     $('input[name="date7"]').daterangepicker({
+       opens: 'left'
+     }, function(start, end, label) {
+       console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+     });
+   });
+   </script>
+
+</body>
+</html>

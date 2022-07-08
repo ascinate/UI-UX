@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blendicons - Event List</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Corben&family=Elsie&family=Encode+Sans+Condensed:wght@400;500;600;700;800&family=Gloria+Hallelujah&family=Inter:wght@100;200;300;400;500;700;800;900&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+   
+
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    
+    
+  </head>
+
+  <body class="event-list-page">
+  
+    <div class="container">
+        <div class="inside-sec comon-last-add mt-5 pt-4">
+            <h1>Save data as events and local storage</h1>
+            <div class="row row-cols-1 row-cols-lg-2 gx-lg-5 mt-5">
+                  <div class="col">
+                     <div class="comon-event-items">
+                         <h5> Customer profile (Login user) </h5>
+                         <hr/>
+                         <ul class="list-unstyled">
+                             <li> First name </li>
+                             <li> Last name </li>
+                             <li> Country </li>
+                             <li> Date sign up </li>
+                             <li> Last seen </li>
+                         </ul>
+                     </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="comon-event-items">
+                        <h5> Customer revenue (Login user) </h5>
+                        <hr/>
+                        <ul class="list-unstyled">
+                            <li> 
+                                <span> Plan type </span> 
+                                <span> Pro monthly </span>
+                            </li>
+                            <li> 
+                                <span> Plan name </span> 
+                                <span> Free #3 </span>
+                            </li>
+                            <li> 
+                                <span> Paying status </span> 
+                                <span> Paying </span>
+                            </li>
+                            <li> 
+                                <span> Date purchase </span> 
+                                <span> 18 Mar 2022 </span>
+                            </li>
+                            <li> 
+                                <span> Time in contract (Months) </span> 
+                                <span> 3 </span>
+                            </li>
+                            <li> 
+                                <span> MRR </span> 
+                                <span> $9.99 </span>
+                            </li>
+                            <li> 
+                                <span> ARR </span> 
+                                <span> $119.88 </span>
+                            </li>
+                            <li> 
+                                <span>LTV </span> 
+                                <span> $29.97 </span>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+
+
+                 <div class="col">
+                    <div class="comon-event-items">
+                        <h5> Customer product activity </h5>
+                        <hr/>
+                        <ul class="list-unstyled">
+                            <li> 
+                                <span> Add to Favorites </span> 
+                                <span> Yes </span>
+                            </li>
+                            <li> 
+                                <span> Create folders </span> 
+                                <span> No </span>
+                            </li>
+                            <li> 
+                                <span> Change color </span> 
+                                <span> No </span>
+                            </li>
+                            <li> 
+                                <span> Used multi download </span> 
+                                <span> No </span>
+                            </li>
+                            <li> 
+                                <span> Icons download </span> 
+                                <span> No </span>
+                            </li>
+                            <li> 
+                                <span> Illustrations download </span> 
+                                <span> No </span>
+                            </li>
+                            <li> 
+                                <span> Elements download </span> 
+                                <span> No </span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                 </div>
+              
+            </div>
+        </div>
+       
+    </div>
+ 
+ <script src="js/bootstrap.bundle.min.js" ></script>
+ <script src="js/jquery.min.js" ></script>
+ <script src="js/custom.js" ></script>
+ <script src="js/jquery-ui.min.js" ></script>
+<script>
+    // datepicker range
+
+
+var start_date = null, end_date = null;
+var timestamp_start_date = null, timestamp_end_date = null;
+var $input_start_date = null, $input_end_date = null;
+
+function getDateClass(date, start, end){
+	if(end != null && start != null){
+		if(date > start && date < end)
+			return [ true, "sejour", "Séjour" ];
+	}
+	
+	if(date == start)
+		return [ true, "start", "Début de votre séjour" ];
+	if(date == end)
+		return [ true, "end", "Fin de votre séjour" ];
+	
+	return false;
+}
+
+function datepicker_draw_nb_nights(){
+	var $datepicker = jQuery("#ui-datepicker-div");
+	setTimeout(function(){
+		if(start_date != null && end_date != null){
+			var $qty_days_stay = jQuery("<div />", { class: "ui-datepicker-stay-duration" });
+			var qty_nights_stay = get_days_difference(timestamp_start_date, timestamp_end_date);
+			$qty_days_stay.text(qty_nights_stay + " nights stay");
+			$qty_days_stay.appendTo($datepicker);
+		}
+	});
+}
+
+var options_start_date = {
+	showAnim: false,
+	constrainInput: true,
+  	numberOfMonths: 2,
+	showOtherMonths: true,
+	beforeShow: function(input, datepicker){
+		datepicker_draw_nb_nights();
+	},
+	beforeShowDay: function(date){
+		// 0: published
+		// 1: class
+		// 2: tooltip
+		var timestamp_date = date.getTime();
+		var result = getDateClass(timestamp_date, timestamp_start_date, timestamp_end_date);
+		if(result != false)
+			return result;
+		
+		return [true, "", ""];
+		// return [ true, "chocolate", "Chocolate! " ];
+	},
+	onSelect: function(date_string, datepicker){
+		// this => input
+		start_date = $input_start_date.datepicker("getDate");
+		timestamp_start_date = start_date.getTime();
+	},
+	onClose: function(){
+		if(end_date != null){
+			if(timestamp_start_date >= timestamp_end_date || end_date == null){
+				$input_end_date.datepicker("setDate", null);
+				end_date = null;
+				timestamp_end_date = null;
+				$input_end_date.datepicker("show");
+				return;
+			}
+		}
+		if(start_date != null && end_date == null)
+			$input_end_date.datepicker("show");
+	}
+};
+var options_end_date = {
+	showAnim: false,
+	constrainInput: true,
+  	numberOfMonths: 2,
+	showOtherMonths: true,
+	beforeShow: function(input, datepicker){
+		datepicker_draw_nb_nights();
+	},
+	beforeShowDay: function(date){
+		var timestamp_date = date.getTime();
+		var result = getDateClass(timestamp_date, timestamp_start_date, timestamp_end_date);
+		if(result != false)
+			return result;
+		
+		return [ true, "", "Chocolate !" ];
+	},
+	onSelect: function(date_string, datepicker){
+		// this => input
+		end_date = $input_end_date.datepicker("getDate");
+		timestamp_end_date = end_date.getTime();
+	},
+	onClose: function(){
+		if(end_date == null)
+			return;
+		
+		if(timestamp_end_date <= timestamp_start_date || start_date == null){
+			$input_start_date.datepicker("setDate", null);
+			start_date = null;
+			timestamp_start_date = null;
+			$input_start_date.datepicker("show");
+		}
+	}
+};
+
+$input_start_date = jQuery("#start-date");
+$input_end_date = jQuery("#end-date");
+
+$input_start_date.datepicker(options_start_date);
+$input_end_date.datepicker(options_end_date);
+
+function get_days_difference(start_date, end_date){
+	return Math.floor(end_date - start_date) / (1000*60*60*24);
+}
+</script>
+ 
+ 
+ </body>
+</html>
